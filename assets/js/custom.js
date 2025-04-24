@@ -71,6 +71,19 @@ $(document).ready(function () {
     ]
   });
 
+  $('.advDetSecSlider').slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1.5,
+    centerMode: false,
+    variableWidth: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  });
+  
+
 // Home Page Innovation In Action Slider
   $('.innoActinSliderTxt').slick({
     slidesToShow: 1,

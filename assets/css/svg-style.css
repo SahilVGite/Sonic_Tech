@@ -1,4 +1,8 @@
-header{position: fixed;top: 3.5em;left: 0;z-index: 999;}
+header{position: fixed;top: 3.5em;left: 0;z-index: 999;transition: all 0.5s;}
+header *{transition: all 0.5s;}
+header.stickyHead{top: 0;background-color: rgba(255,255,255,0.2);}
+/* header.stickyHead .headerWrap{max-width: 100%;} */
+header.stickyHead .headerWrap .headerContent{background-color: transparent;}
 .headerWrap{max-width: 92.5%;margin: auto;}
 .headerContent{background:rgba(255,255,255,0.06);border-radius:66px;padding: 1.5em;}
 .brandLogo{max-width: 104px;}
@@ -8,8 +12,8 @@ header{position: fixed;top: 3.5em;left: 0;z-index: 999;}
 
 /* Section With Min-height 100vh */
 .wtWeOffSec,.BannerSec,.wtWeDoSec,.TmPartnersSec,.innoActSec{min-height: 100vh;}
-
-.hmBanner{background-image: url(../images/banner_Img.png);background-position: center;background-repeat: no-repeat;background-size: cover;}
+.BannerSec{background-position: center;background-repeat: no-repeat;background-size: cover;}
+.hmBanner{background-image: url(../images/banner_Img.png);}
 .hmBanner .bannerCont{max-width: 70%;}
 .bannerCont > .commBtn{margin-top: 3em;}
 
@@ -55,3 +59,39 @@ button.slick-next.slick-arrow{background-image: url(../images/nextBtn.png);trans
 .footStDet > *{width: calc(50% - 1em);}
 .footContact > *{margin-bottom: 1.5em;}
 .footCopy{padding: 1em;border-top: 1px solid rgba(213, 215, 216, 0.3);}
+
+
+/*  */
+.solutionsBanner{background-image: url(../images/solutionsBanner-bg.png);}
+.solutionsBanner-2{background-image: url(../images/solutionsBanner-bg2.png);}
+.advDetSec{background-image: url(../images/innovAction-bg.png);background-position: center;background-repeat: no-repeat;background-size: 100% 100%;}
+.advDetSec .bannerTxt{max-width: 958px;}
+.advDetSecSliderSec{max-width: 95%;margin-left: auto;}
+.advDetSecSlider{margin-top: 3em;}
+.advDetSecSliderCont{padding: 3em;background-image: url(../images/wtWeOff-Dots.png);background-position: center;background-size: cover;background-repeat: no-repeat;box-shadow: 0px 4px 24.2px 1px rgba(255, 255, 255, 0.2);border-radius: 32px;border: 1px solid rgba(213, 215, 216, 0.3);background-color: #121212;display: flex !important;margin: 0 1.5em;}
+.advDetSecSliderContTxtHead > *{font-size: var(--body);color: var(--txt-primary-color);font-weight: var(--fw-semi-bold);line-height: 0.97;}
+.advDetSecSliderContTxt_p > ul > li{font-size: var(--body-subTxt);color: var(--txt-primary-color);font-weight: var(--fw-regular);font-family: var(--primary-font);line-height: 1.272;position: relative;padding-left: 1.5em;margin: 0.8em;}
+.advDetSecSliderContTxt_p > ul > li::before{content:'';position:absolute;left:0;top:50%;transform: translateY(-50%); width:16px;height:16px;background-image:url('../images/list_Icon.png');background-size:contain;background-repeat:no-repeat;}
+.advDetSecSliderContTxt > .commBtn{margin-top: 2em;}
+.advDetSecSliderCont > .advDetSecSliderContImg{max-width: 30%;}
+.enerSoluSec .enerSoluSecCard > .advDetSecSliderCont{max-width: 60%;margin: auto;margin-top: 3em;}
+.solutionsBanner-3{background-image: url(../images/ourpartners-bg.png);}
+.techTabCardImg{box-shadow: 0px 4px 24.2px 1px rgba(255, 255, 255, 0.2);border-radius: 12px;overflow: hidden;}
+.techTabCards{gap: 1.5em;row-gap: 2.5em;}
+.techTabCard{width: calc(33.333% - 1em);}
+.techTabCardTxt > *{font-size: var(--body);font-weight: bolder;text-align: center;color: var(--txt-primary-color);margin-top: 1em;}
+.solPgTabSec{background-image: url(../images/techTabSec-bg.png);background-position: center;background-repeat: no-repeat;background-size: 100% 100%;}
+.solPgTabbing .tabBtn{font-size: var(--body-subTxt);color: var(--txt-primary-color);font-weight: var(--fw-regular);line-height: 0.97;padding-bottom: 0.2em;border-bottom: 2px solid transparent;transition: all 0.3s;}
+.solPgTabbing .tabBtn.active{color: var(--Tertiary-color);border-bottom: 2px solid var(--Tertiary-color);}
+.solPgTabbing{margin: 1.5em 0;}
+.advDetSecSlider .slick-track{padding: 2em 0;}
+
+.tab-content{display: none;}
+.tab-content.active{display: block;}
+
+.advDetSecSlider .slick-list {
+  overflow: hidden;
+  padding-right: 25%; /* Adjust this to show only half of the 2nd slide */
+  padding-left: 0;
+  margin: 0;
+}
