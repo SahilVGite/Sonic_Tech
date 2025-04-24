@@ -70,6 +70,24 @@ $(document).ready(function () {
       }
     ]
   });
+
+// Home Page Innovation In Action Slider
+  $('.innoActinSliderTxt').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: '.innoActinSliderImg'
+  });
+  $('.innoActinSliderImg').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.innoActinSliderTxt',
+    dots: false,
+    arrows: false,
+    // centerMode: true,
+    focusOnSelect: true
+  });
   
 
 });
