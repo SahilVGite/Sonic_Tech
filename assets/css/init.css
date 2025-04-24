@@ -179,4 +179,4 @@ q{quotes:"\201C" "\201D" "\2018" "\2019";}
 .bannerTxt{font-size: var(--Sub_Heading);color: var(--txt-primary-color);font-weight: var(--fw-regular);font-family: var(--primary-font);line-height: 1.272;max-width: 650px;margin-top: 1.5em;}
 .CommSecTitle > *{font-size: var(--main-title);color: var(--txt-primary-color);font-weight: var(--fw-semi-bold);line-height: 0.97;text-align: center;letter-spacing: 0.12em;text-transform: uppercase;}
 
-.Comm_Txt{font-family: var(--primary-font);color: var(--txt-primary-color);font-weight: var(--fw-regular);line-height: 1.272;}
+.Comm_Txt{font-family: var(--primary-font);color: var(--txt-primary-color);font-weight: var(--fw-regular);line-height: 1.272;font-size: var(--body);}
