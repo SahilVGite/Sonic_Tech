@@ -1,0 +1,89 @@
+@media (max-width:1800px){
+    .grid-wrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+      grid-auto-rows: 400px;
+      grid-auto-flow: dense;
+    }
+  }
+
+  @media (max-width:1600px){
+    .grid-wrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+      grid-auto-rows: 325px;
+      grid-auto-flow: dense;
+    }
+
+
+    .ourValueText p {font-size: 35px;}
+  }
+
+  @media (max-width:1256px){
+    .grid-wrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+      grid-auto-rows: 250px;
+      grid-auto-flow: dense;
+    }
+    .techGallInfo h5 {margin-bottom: 1.2em;}
+    .techLifeIcon {margin-bottom: 1.2em;}
+  }
+
+  @media (max-width:991px){
+    .grid-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+        grid-auto-rows: 280px;
+    }
+
+    .techGallInfo h5{font-size: 18px; margin-bottom: 1em;}
+    .transformative{width: 60%;}
+    .foundLife{max-width: 573px;}
+    .techGallInfo {position: absolute; top: 22px; left: 22px; right: 22px; padding-right: 3em;}
+    .rootsTree{width: 50%;}
+
+    .ourValueText h5 {font-size: 25px;}
+    .ourValueText p {font-size: 25px;}
+  }
+
+
+
+  @media (max-width:767px){
+    .grid-wrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      grid-auto-rows: 250px;
+      grid-auto-flow: dense;
+    }
+
+    .grid-wrapper .tall {grid-column: auto;grid-row: auto;}
+    .grid-wrapper .wide {grid-column: auto;}
+    .grid-wrapper .middle {grid-column: auto !important;}
+
+    .foundBotImg {width: 47%;float: left;position: absolute;right: 0;bottom: -8px;}
+
+    .techGallInfo{ align-self: anchor-center;}
+  }
+
+  @media (max-width:550px){
+    .grid-wrapper .tall {
+      grid-column: auto;
+      grid-row: auto;
+    }
+
+    .grid-wrapper .wide {
+      grid-column: auto;
+    }
+
+
+    .visionMissionBox {flex-direction: column; align-items: center;}
+    .vmText{width: 100%;}
+
+    .ourValuesInfo{flex-direction: column-reverse;}
+    .ourValueText{max-width: 100%;}
+    .ourValueImg {max-width: 100%;}
+  }
