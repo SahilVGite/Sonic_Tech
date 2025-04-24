@@ -39,5 +39,37 @@ $(document).ready(function () {
   $("img, iframe").attr("loading", "lazy");
 
 
+  // our value slide
+  
+  $('.ourValueSlide').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    arrows: false,
+    autoplay: true,            // Enables autoplay
+    autoplaySpeed: 1000,       // Slide delay in milliseconds
+    infinite: true,            // Loop slides infinitely
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+  
 
 });

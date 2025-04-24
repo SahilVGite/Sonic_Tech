@@ -1,0 +1,39 @@
+/* about section */
+.aboutBanner{
+    background-image: url(../images/about_bann.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* vision mission */
+.visionMission{
+    background-image: url(../images/vm-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+.visionMissionBox{justify-content: space-between; align-items: center;}
+.visionMissionBox:first-child{margin-bottom: 100px;}
+.vmText{max-width: 50%;}
+.vmText h4{font-size: 40px;}
+.vmImg{max-width: 40%;overflow: hidden; box-shadow: 0px 4px 24.2px 1px rgba(255, 255, 255, 0.2);}
+.visionBox{flex-direction: row-reverse;}
+
+/* our values */
+.ourValues{
+    background-image: url(../images/ourvalue-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.ourValueSlide{margin-top: 3.25em;}
+.ovSlideItem{margin-top: 3.25em; background: rgba(255, 255, 255, 0.05);border: 1px solid rgba(213, 215, 216, 0.3); box-shadow: 0px 0px 24.2px 1px rgba(255, 255, 255, 0.2);border-radius: 20px; padding: 64px 23px; margin: 21px 15px;} 
+.ovSlideItem p{font-weight: --fw-semi-bold;}
+
+/* EHC Section */
+.ehcTextBtn{display: flex; justify-content: center; align-items: center; flex-direction: column;}
+.ehcTextBtn h3{font-size: 44px; margin-bottom: 1.75em;}
+
+  
