@@ -10,7 +10,6 @@
 @media only screen and (max-width: 1366px){
     :root{--banner-title:84px;--main-title:64px;--common-heading:32px;--Sub_Heading:24px;--body:20px;--body-sub:18px;--body-subTxt:16px;--smallestTxt:14px;--secGap:80px;}
     .wtWeDoSecCardIcon{max-width: 15px;}
-    .TmPartnersSecCard{padding:1em 3em;}
 }
 @media only screen and (max-width: 1280px){
 
@@ -18,15 +17,19 @@
 @media only screen and (max-width: 1100px){
     :root{--banner-title:70px;--main-title:60px;--common-heading:30px;--Sub_Heading:22px;--body:18px;--body-sub:17px;--body-subTxt:15px;--smallestTxt:13px;--secGap:60px;}
     .innovActiv_p > *{max-width:75%;}
-    .TmPartnersSecCard{padding:1.5em;}
 
 }
 @media only screen and (max-width: 1024px){
     .BannerSec{background-size:110% 100%;}
+    .footerContent{flex-flow:row wrap;}
+    .footStDet{max-width:100%;margin-top: 1.5em;justify-content: space-between;}
+    .ContactForm,.ContactFrmContTxt{width:45%;}
 
 }
 @media only screen and (max-width: 950px){
     :root{--banner-title:60px;--main-title:50px;--common-heading:26px;--Sub_Heading:20px;--body:17px;--body-sub:16px;--body-subTxt:14px;--smallestTxt:13px;--secGap:50px;}
+    .wtWeOffSec,.BannerSec,.wtWeDoSec,.TmPartnersSec,.innoActSec,.ContactFrm{min-height: auto;}
+    main .BannerSec:first-child{padding-top: calc(var(--secGap) * 3);}
     .wtWeOffContTxt{max-width:50%;}
     .innoActinSliderSec{flex-direction: column-reverse;}
     .innoActinSliderSec{margin-bottom:7em;}
@@ -34,27 +37,44 @@
     button.slick-prev.slick-arrow{background-image: url(../images/prevBtn.png);transform: translateX(-25px);}
     button.slick-next.slick-arrow{background-image: url(../images/nextBtn.png);transform: translateX(25px);}
     .innoActinSliderTxt{max-width:50%;}
-    .TmPartnersSecCard{padding:1em;}
 
 
 }
 @media only screen and (max-width: 800px){}
 @media only screen and (max-width: 768px){
     :root{--banner-title:50px;--main-title:40px;--common-heading:22px;--Sub_Heading:19px;--body:16px;--body-sub:15px;--body-subTxt:13px;--smallestTxt:12px;--secGap:50px;}
-    .TmPartnersSecCard > img{min-width:60px;}
-    .TmPartnersSecCard{padding:0.5em;}
+    .TmPartnersSecCard > img{max-width:60px;}
     .wtWeOffCont{flex-direction:column;gap: 2em;}
     .wtWeOffContTxt,.wtWeOffContImg{width: 100%;max-width: 100%;text-align: center;}
     .BannerSec{background-size:150% 100%;}
 
     .headMenu{position: fixed;right: -9999px;max-width: 320px;width: 100%;top: 0;height: 100%;transition: all 0.3s;}
     .headMenu.active{right: 0;}
-    .headMenu > ul{flex-direction: column;align-items: flex-start;background-color: #181516;height: 100%;padding: 3em;}
+    .headMenu > ul{flex-direction: column;align-items: flex-start;background-color: #181516;height: 100%;padding: 5em 3em;}
     .close_menu{position:absolute;right:15px;top:15px;width:20px;height:20px;background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');background-repeat:no-repeat;background-size:contain;cursor:pointer;}
     .headerBtn{margin-left: auto;margin-right: 1em;}
     .headerContent{justify-content: flex-start;}
     .ham_menu{display: block;}
 }
-@media only screen and (max-width: 600px){}
+@media only screen and (max-width: 600px){
+    :root{--banner-title:35px;--main-title:25px;--common-heading:20px;--Sub_Heading:18px;--body:15px;--body-sub:14px;--body-subTxt:12px;--smallestTxt:12px;--secGap:50px;}
+    .footerContent{flex-flow:row wrap;}
+    .footCtr,.footCtr2{width:50%;}
+    .footLogos.footLft{width:100%;display:flex;align-items:center;margin-bottom:1em;justify-content:center;}
+    .FtStLogo{margin-bottom: 1em;max-width: 100px;}
+    .FtCertLogo{max-width:60px;}
+    .footStDet > *{width:calc(50% - 0em);}
+    .bannerTitle > * br{display: none;}
+    .wtWeDoSecCard{width: 100%;}
+    .ContactForm,.ContactFrmContTxt{width:100%;}
+    .hmBanner .bannerCont{max-width:100%;}
+    .offeringSec{border-radius:20px;padding:1.5em;}
+    .innoActinSliderSec{margin-bottom:5em;}
+
+
+}
 @media only screen and (max-width: 550px){}
-@media only screen and (max-width: 400px){}
+@media only screen and (max-width: 400px){
+    .footCtr,.footCtr2,.footStDet > *{width:100%;}
+
+}

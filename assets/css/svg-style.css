@@ -1,4 +1,4 @@
-header{position: fixed;top: 3.5em;left: 0;z-index: 999;transition: all 0.5s;}
+header{position: fixed;top: 2em;left: 0;z-index: 999;transition: all 0.5s;}
 header *{transition: all 0.5s;}
 header.stickyHead{top: 0;background-color: #181516;}
 /* header.stickyHead .headerWrap{max-width: 100%;} */
@@ -12,7 +12,7 @@ header.stickyHead .headerWrap .headerContent{background-color: transparent;}
 .ham_menu{display: none;}
 
 /* Section With Min-height 100vh */
-.wtWeOffSec,.BannerSec,.wtWeDoSec,.TmPartnersSec,.innoActSec{min-height: 100vh;}
+.wtWeOffSec,.BannerSec,.wtWeDoSec,.TmPartnersSec,.innoActSec,.ContactFrm{min-height: 100vh;}
 .BannerSec{background-position: center;background-repeat: no-repeat;background-size: cover;}
 .hmBanner{background-image: url(../images/banner_Img.png);}
 .hmBanner .bannerCont{max-width: 70%;}
@@ -34,8 +34,8 @@ header.stickyHead .headerWrap .headerContent{background-color: transparent;}
 .wtWeOffContTxtHead > *{font-size: var(--common-heading);font-weight: var(--fw-semi-bold);line-height: 1.04;}
 .wtWeOffContTxt{max-width: 40%;}
 .TmPartnersSec{background-image: url(../images/ourpartners-bg.png);background-position: center;background-size: 100% 100%;background-repeat: no-repeat;}
-.TmPartnersSecCard{width: calc(20% - 1em);padding: 3em 5em;}
-.TmPartnersSecCard > img{min-width: 100px;}
+.TmPartnersSecCard{width: calc(20% - 1em);}
+.TmPartnersSecCard > img{max-width: 100px;margin: auto;}
 .TmPartnersSecCard:not(:last-child){border-right: 1px solid rgba(213, 215, 216, 0.3);}
 .TmPartnersSecCards{margin-top: 5em;}
 
@@ -46,6 +46,15 @@ header.stickyHead .headerWrap .headerContent{background-color: transparent;}
 .innoActinSliderTxt{max-width: 25%;}
 .innoActinSliderTxtHead > *{font-size: var(--common-heading);color: var(--txt-primary-color);font-weight: var(--fw-bold);line-height: 0.97;text-align: center;}
 .innoActinSliderTxt_p > *{font-size: var(--body);color: var(--txt-primary-color);font-weight: var(--fw-regular);line-height: 1.272;text-align: center;margin-top: 1em;}
+
+.ContactFrm{background-image: url(../images/contactFrm-bg.png);background-position: center;background-repeat: no-repeat;background-size: 100% 100%;}
+.ContactFrmContTxt *{text-align: left;}
+.ContactFormCont{background: rgba(255, 255, 255, 0.05);border: 1px solid rgba(213, 215, 216, 0.3);border-radius: 20px;padding: 2.5em;}
+.ContactFormFld input{width: 100%;background-color: transparent;padding: 1em;border: none;border-bottom: 0.8px solid rgba(213, 215, 216, 0.15);outline: none;font-size: var(--body-sub);color: var(--txt-primary-color);font-weight: var(--fw-regular);}
+.ContactForm,.ContactFrmContTxt{width: 40%;}
+.ContactFormCont > ul > li{margin-bottom: 1em;}
+.ContactFrm .main-wrapper{max-width: 1300px;width: 90%;}
+
 
 button.slick-next.slick-arrow,button.slick-prev.slick-arrow{background-repeat: no-repeat;background-position: center;width: 78px;height: 78px;top: auto;bottom: -150%;left: 40%;right: auto;}
 button.slick-prev.slick-arrow{background-image: url(../images/prevBtn.png);transform: translateX(-50px);}

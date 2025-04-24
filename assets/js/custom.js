@@ -83,6 +83,44 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 3000,
   });
+
+  $('.TmPartnersSecCards').slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 7,
+    centerMode: false,
+    variableWidth: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 6
+        }
+      },
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 5
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3
+        }
+      }
+    ]
+  });
   
 
 // Home Page Innovation In Action Slider
