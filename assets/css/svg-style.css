@@ -6,16 +6,33 @@ header{position: fixed;top: 3.5em;left: 0;z-index: 999;}
 .headMenu a{font-size: var(--smallestTxt);color: var(--txt-primary-color);font-weight: var(--fw-semi-bold);font-family: var(--secondary-font);text-transform: uppercase;}
 .headMenu a.active{color: var(--Tertiary-color);}
 
-.BannerSec{min-height: 100vh;}
+/* Section With Min-height 100vh */
+.wtWeOffSec,.BannerSec,.wtWeDoSec,.TmPartnersSec,.innoActSec{min-height: 100vh;}
+
 .hmBanner{background-image: url(../images/banner_Img.png);background-position: center;background-repeat: no-repeat;background-size: cover;}
 .hmBanner .bannerCont{max-width: 70%;}
 .bannerCont > .commBtn{margin-top: 3em;}
 
 
 .wtWeDoSec{background-image: url(../images/wtWeDo-Bg.png);background-position: center;background-size: 100% 100%;background-repeat: no-repeat;}
-.wtWeDoSec::before{content: " ";background: linear-gradient(0deg, #181516 0%, #060B13 117.57%);filter: blur(53.4px);position: absolute;top: 0;left: 0;width: 100%;height: 25%;}
-.wtWeDoSecCardTitle > *{font-size: var(--body-subTxt);color: var(--Quaternary-color);font-weight: var(--fw-regular);font-family: var(--secondary-font);text-transform: uppercase;}
+.wtWeDoSec::before{content: " ";background: linear-gradient(0deg, #181516 0%, #060B13 117.57%);filter: blur(53.4px);position: absolute;top: 0;left: 0;width: 100%;height: 20%;}
+.wtWeDoSec::after{content: " ";background: linear-gradient(0deg, #181516 0%, #060B13 117.57%);filter: blur(53.4px);position: absolute;bottom: 0;left: 0;width: 100%;height: 20%;}
+.wtWeDoSecCardTitle > *{font-size: var(--body-subTxt);color: var(--Quaternary-color);font-weight: var(--fw-regular);font-family: var(--secondary-font);text-transform: uppercase;min-height: calc(1.5em * 3);}
 .wtWeDoSecCardIcon{max-width: 15px;}
-.wtWeDoSecCards{gap: 1.5em;}
+.wtWeDoSecCards{gap: 1.5em;margin-top: 4.0625em;}
 .wtWeDoSecCard{width: calc(33.333% - 1em);background: rgba(255, 255, 255, 0.05);border: 1px solid rgba(213, 215, 216, 0.3);box-shadow: 0px 4px 24.2px 1px rgba(255, 255, 255, 0.2);border-radius: 20px;padding: 3.125em 2.1875em;}
+.wtWeDoSecCard > .Comm_Txt > p{line-height: 1.2719;}
+.offeringSec{background-image: url(../images/wtWeOff-Dots.png);background-position: center;background-repeat: no-repeat;background-size: cover;border-radius: 36px;box-shadow: 0px 0px 75px 30px rgba(9, 39, 147, 0.65);padding: 4.0625em;}
+.wtWeOffContImg{border-radius: 20px;overflow: hidden;max-width: 50%;}
+.wtWeOffContTxtSubHead > *{font-size: var(--body-subTxt);color: var(--txt-primary-color);font-weight: var(--fw-semi-bold);font-family: var(--secondary-font);text-transform: uppercase;}
+.wtWeOffContTxtHead > *{font-size: var(--common-heading);font-weight: var(--fw-semi-bold);line-height: 1.04;}
+.wtWeOffContTxt{max-width: 40%;}
+.TmPartnersSec{background-image: url(../images/ourpartners-bg.png);background-position: center;background-size: 100% 100%;background-repeat: no-repeat;}
+.TmPartnersSecCard{width: calc(20% - 1em);padding: 5em;}
+.TmPartnersSecCard:not(:last-child){border-right: 1px solid rgba(213, 215, 216, 0.3);}
+.TmPartnersSecCards{margin-top: 5em;}
 
+.innoActSec{background-image: url(../images/innovAction-bg.png);background-position: center;background-size: 100% 100%;background-repeat: no-repeat;}
+.innovActiv_p > *{max-width: 39%;margin: auto;}
+.innoActinSliderImg{max-width: 60%;border-radius: 20px;overflow: hidden;}
+.innoActinSliderTxtHead > *{font-size: var(--common-heading);color: var(--txt-primary-color);font-weight: var(--fw-bold);}

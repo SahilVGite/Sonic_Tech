@@ -68,7 +68,7 @@
 
 header, main, footer{width: 100%;float: left;}
 
-body{text-rendering:optimizeSpeed;line-height:1.5; font-family: var(--secondary-font);background-color: rgba(6, 11, 19, 1);color: var(--White);}
+body{text-rendering:optimizeSpeed;line-height:1.5; font-family: var(--secondary-font);background-color: #060B13;color: var(--White);}
 body,h1,h2,h3,h4,h5,h6,p,ul,ul li{margin:0;padding:0;}
 *,*::before,*::after{outline:none;box-sizing:border-box;scroll-behavior:smooth;}
 *{margin:0;padding:0;}
@@ -161,6 +161,7 @@ q{quotes:"\201C" "\201D" "\2018" "\2019";}
 .padd-bot0{padding-bottom: 0;}
 .marg-bot0{margin-bottom: 0;}
 .z-3{z-index: 3;}
+.gp-1{gap: 1em;}
 
 
 /* scrollbar */
