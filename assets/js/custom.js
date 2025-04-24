@@ -7,8 +7,8 @@ $(document).ready(function () {
   });
 
   // Hamburger Menu
-  $(".meanuSecBtn").on("click", function () {
-    $(".meanuSecBtnNav").toggleClass("active");
+  $(".ham_menu").on("click", function () {
+    $(".headMenu").toggleClass("active");
     $("body").toggleClass("menu-open");
 
     if (!$(".menu-overlay").length) {
@@ -16,8 +16,8 @@ $(document).ready(function () {
     }
   });
 
-  $(document).on("click", ".menu-overlay, .meanuSecBtnNavCloseBtn", function () {
-    $(".meanuSecBtnNav").removeClass("active");
+  $(document).on("click", ".menu-overlay, .close_menu", function () {
+    $(".headMenu").removeClass("active");
     $("body").removeClass("menu-open");
     $(".menu-overlay").remove();
   });
@@ -70,6 +70,7 @@ $(document).ready(function () {
       }
     ]
   });
+
 
   $('.advDetSecSlider').slick({
     dots: false,

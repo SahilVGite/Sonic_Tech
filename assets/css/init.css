@@ -37,21 +37,15 @@
     --Tertiary-color: #07ABEC;
     --Quaternary-color: #028485;
     --Quinary-color: #176ACC;
-    /* --Senary-color: #D5D7D8; */
-    /* --Septenary-color: #606060; */
-    /* --octonary-color: #1F7FE8; */
-    /* --btn-third-color: #FF7F50; */
     --txt-primary-color: #D5D7D8;
-    /* --txt-secondary-color: #333333; */
-    --banner-title:84px;
-    --main-title:64px;
-    --common-heading:32px;
-    --Sub_Heading:24px;
-    /* --Sub_Txt:24px; */
-    --body:20px;
-    --body-sub:18px;
-    --body-subTxt:16px;
-    --smallestTxt:14px;
+    --banner-title:94px;
+    --main-title:74px;
+    --common-heading:42px;
+    --Sub_Heading:28px;
+    --body:26px;
+    --body-sub:22px;
+    --body-subTxt:20px;
+    --smallestTxt:18px;
     --secGap:100px;
     --fw-light:300;
 	--fw-regular:400;
