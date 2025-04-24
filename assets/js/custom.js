@@ -82,6 +82,14 @@ $(document).ready(function () {
     variableWidth: false,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 950,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
   $('.TmPartnersSecCards').slick({

@@ -10,6 +10,7 @@ header.stickyHead .headerWrap .headerContent{background-color: transparent;}
 .headMenu a{font-size: var(--smallestTxt);color: var(--txt-primary-color);font-weight: var(--fw-semi-bold);font-family: var(--secondary-font);text-transform: uppercase;}
 .headMenu a.active{color: var(--Tertiary-color);}
 .ham_menu{display: none;}
+body.menu-open{overflow: hidden;}
 
 /* Section With Min-height 100vh */
 .wtWeOffSec,.BannerSec,.wtWeDoSec,.TmPartnersSec,.innoActSec,.ContactFrm{min-height: 100vh;}
@@ -50,6 +51,7 @@ header.stickyHead .headerWrap .headerContent{background-color: transparent;}
 .ContactFrm{background-image: url(../images/contactFrm-bg.png);background-position: center;background-repeat: no-repeat;background-size: 100% 100%;}
 .ContactFrmContTxt *{text-align: left;}
 .ContactFormCont{background: rgba(255, 255, 255, 0.05);border: 1px solid rgba(213, 215, 216, 0.3);border-radius: 20px;padding: 2.5em;}
+
 .ContactFormFld input{width: 100%;background-color: transparent;padding: 1em;border: none;border-bottom: 0.8px solid rgba(213, 215, 216, 0.15);outline: none;font-size: var(--body-sub);color: var(--txt-primary-color);font-weight: var(--fw-regular);}
 .ContactForm,.ContactFrmContTxt{width: 40%;}
 .ContactFormCont > ul > li{margin-bottom: 1em;}

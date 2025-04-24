@@ -17,6 +17,7 @@
 @media only screen and (max-width: 1100px){
     :root{--banner-title:70px;--main-title:60px;--common-heading:30px;--Sub_Heading:22px;--body:18px;--body-sub:17px;--body-subTxt:15px;--smallestTxt:13px;--secGap:60px;}
     .innovActiv_p > *{max-width:75%;}
+    .advDetSecSliderCont > .advDetSecSliderContImg{max-width:30%;}
 
 }
 @media only screen and (max-width: 1024px){
@@ -37,7 +38,7 @@
     button.slick-prev.slick-arrow{background-image: url(../images/prevBtn.png);transform: translateX(-25px);}
     button.slick-next.slick-arrow{background-image: url(../images/nextBtn.png);transform: translateX(25px);}
     .innoActinSliderTxt{max-width:50%;}
-
+    .enerSoluSec .enerSoluSecCard > .advDetSecSliderCont{max-width: 100%;}
 
 }
 @media only screen and (max-width: 800px){}
@@ -57,7 +58,7 @@
     .ham_menu{display: block;}
 }
 @media only screen and (max-width: 600px){
-    :root{--banner-title:35px;--main-title:25px;--common-heading:20px;--Sub_Heading:18px;--body:15px;--body-sub:14px;--body-subTxt:12px;--smallestTxt:12px;--secGap:50px;}
+    :root{--banner-title:30px;--main-title:25px;--common-heading:20px;--Sub_Heading:18px;--body:15px;--body-sub:14px;--body-subTxt:12px;--smallestTxt:12px;--secGap:50px;}
     .footerContent{flex-flow:row wrap;}
     .footCtr,.footCtr2{width:50%;}
     .footLogos.footLft{width:100%;display:flex;align-items:center;margin-bottom:1em;justify-content:center;}
@@ -70,8 +71,15 @@
     .hmBanner .bannerCont{max-width:100%;}
     .offeringSec{border-radius:20px;padding:1.5em;}
     .innoActinSliderSec{margin-bottom:5em;}
-
-
+    .ContactFrmContTxt *{text-align:center;}
+    .ContactFrmContTxt br{display: none;}
+    .headerContent{padding:1em;}
+    .headerBtn{margin-right: 0.5em;}
+    .ham_menu svg{max-width:30px;width:100%;height:auto;}
+    .advDetSecSliderCont{flex-direction:column;}
+    .techTabCard{width:calc(50% - 1em);}    
+    .bannerTitle br{display: none;}
+    
 }
 @media only screen and (max-width: 550px){}
 @media only screen and (max-width: 400px){
