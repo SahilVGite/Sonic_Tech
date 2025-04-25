@@ -15,7 +15,7 @@ body.menu-open{overflow: hidden;}
 
 
 /* Section With Min-height 100vh */
-.wtWeOffSec,.BannerSec,.wtWeDoSec,.TmPartnersSec,.innoActSec,.ContactFrm{min-height: 100vh;}
+.wtWeOffSec,.BannerSec,.wtWeDoSec,.TmPartnersSec,.innoActSec,.ContactFrm,.scrollSlider{min-height: 100vh;}
 .BannerSec{background-position: center;background-repeat: no-repeat;background-size: cover;}
 .hmBanner{background-image: url(../images/banner_Img.png);}
 .hmBanner .bannerCont{max-width: 70%;}
@@ -54,14 +54,17 @@ body.menu-open{overflow: hidden;}
 .ContactFrmContTxt *{text-align: left;}
 .ContactFormCont{background: rgba(255, 255, 255, 0.05);border: 1px solid rgba(213, 215, 216, 0.3);border-radius: 20px;padding: 2.5em;}
 
-.ContactFormFld input{width: 100%;background-color: transparent;padding: 0.6em 0;border: none;border-bottom: 0.8px solid rgba(213, 215, 216, 0.15);outline: none;font-size: var(--body-sub);color: var(--txt-primary-color);font-weight: var(--fw-regular);}
+.ContactFormFld input{width: 100%;background-color: transparent;padding: 1.5em 0 0.4em 0;border: none;border-bottom: 0.8px solid rgba(213, 215, 216, 0.15);outline: none;font-size: var(--body-sub);color: var(--txt-primary-color);font-weight: var(--fw-regular);}
 .ContactForm,.ContactFrmContTxt{width: 40%;}
-.ContactFormCont > ul > li{margin-bottom: 1em;}
+.ContactFormCont > ul > li:not(:last-child){margin-bottom: 1em;}
+.ContactFormCont > ul > li:last-child{margin-top: 2em;}
 .ContactFrm .main-wrapper{max-width: 1300px;width: 90%;}
-.floating-labelInp label.floating-label{font-size: var(--body-sub);color: var(--txt-primary-color);font-weight: var(--fw-regular);font-family: var(--primary-font);position:absolute;top:50%;left:0;transform:translateY(-50%);pointer-events:none;transition:all 0.3s ease;z-index:1;padding:0 !important;line-height:1.3;}
-.floating-labelInp label.floating-label.active{top:-15px;left:0px;opacity:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 0em);font-size:var(--body-sub);}
+.floating-labelInp label.floating-label{font-size: var(--body-sub);color: var(--txt-primary-color);font-weight: var(--fw-regular);font-family: var(--secondary-font);position:absolute;top:50%;left:0;transform:translateY(-50%);pointer-events:none;transition:all 0.3s ease;z-index:1;padding:0 !important;line-height:1.3;}
+.floating-labelInp label.floating-label.active{top:12px;left:0px;opacity:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 0em);font-size: calc(var(--body-sub) - 4px);}
 .telFlagLab{align-items: baseline;gap: 0.4em;}
 .telFlagLab > img{max-width: 16px;}
+.telFlagLab.active > img{max-width:12px;}
+
 
 
 button.slick-next.slick-arrow,button.slick-prev.slick-arrow{background-repeat: no-repeat;background-position: center;width: 78px;height: 78px;top: auto;bottom: -150%;left: 40%;right: auto;}
@@ -109,6 +112,15 @@ button.slick-next.slick-arrow{background-image: url(../images/nextBtn.png);trans
 .advDetSecSlider .slick-track{padding: 2em 0;}
 .advDetSec .advDetSecSliderCont > .advDetSecSliderContImg{max-width: 50%;}
 .advDetSec .advDetSecSliderCont > .advDetSecSliderContImg > img{max-width: 50%;margin: auto;}
+.solutionsBanner .bannerTxt{max-width: 55%;margin: auto;margin-top: 0.5em;}
 
-.tab-content{display: none;}
-.tab-content.active{display: block;}
+
+
+ .card-stack{position:relative;min-height:100vh;}
+.stackcards{position:absolute;margin:auto;right:0;bottom:0;z-index:1;transform:translateY(0);background-color:#181516;background-image:url(../images/wtWeOff-Dots.png);background-position:center;background-size:cover;background-size:cover;border:1px solid rgba(213,215,216,0.3);border-radius:36px;padding:6em 3em;transition:transform 0.3s ease;transform-origin:center center;}
+.stackcards .bannerTxt{max-width:60%;}
+.stackcards:nth-child(2){z-index:4;transform:translateY(-10%);}
+.stackcards:nth-child(3){z-index:3;transform:translateY(-20%);}
+.stackcards:nth-child(4){z-index:2;transform:translateY(-30%);}
+
+  

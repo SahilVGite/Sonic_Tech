@@ -1,11 +1,16 @@
 $(document).ready(function () {
 
+  $('.stackcards').each(function(i, el) {
+  $(el).css('z-index', $('.stackcards').length - i);
+});
+
+
   var hash = window.location.hash;
 
     if (hash === "#contactSec") {
       var $target = $(hash);
       if ($target.length) {
-        var offset = 70; // Adjust based on your fixed header height
+        var offset = 0; // Adjust based on your fixed header height
         setTimeout(function () {
           $('html, body').animate({
             scrollTop: $target.offset().top - offset

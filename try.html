@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #0c0c0c;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.card-stack-section {
+  height: 100vh;
+  position: relative;
+}
+
+.card-stack {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 50%;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  background: #1c1c1c;
+  border-radius: 24px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  z-index: 1;
+  transform: translateY(0);
+}
+
+.card:nth-child(2) { background: #202020; z-index: 4; }
+.card:nth-child(3) { background: #262626; z-index: 3; }
+.card:nth-child(4) { background: #2a2a2a; z-index: 2; }
+
+.after-section {
+  height: 100vh;
+  padding: 50px;
+  background: #141414;
+}
+
+
+</style>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+</head>
+<body>
+    <section class="card-stack-section">
+        <div class="card-stack">
+          <div class="card">Card 1</div>
+          <div class="card">Card 2</div>
+          <div class="card">Card 3</div>
+          <div class="card">Card 4</div>
+        </div>
+      </section>
+      
+      <section class="after-section">
+        <h2>Next Section</h2>
+        <p>This content comes after all cards are scrolled.</p>
+      </section>
+      
+      
+      <script>
+          gsap.registerPlugin(ScrollTrigger);
+
+        const cards = gsap.utils.toArray(".card");
+        const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".card-stack-section",
+            start: "top top",
+            end: "+=" + (cards.length * window.innerHeight),
+            scrub: true,
+            pin: true
+        }
+        });
+
+        cards.forEach((card, index) => {
+        if (index === 0) return; // First card stays in place
+        tl.to(card, { yPercent: -100 }, "+=0.5"); // animate next card up
+        });
+      </script>
+      
+</body>
+</html>

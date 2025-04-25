@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Solutions page</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="./assets/css/init.css">
     <link rel="stylesheet" href="./assets/css/svg-style.css">
     <link rel="stylesheet" href="./assets/css/svg-device.css">
+
+    <!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
@@ -24,9 +28,9 @@
                 <div class="headMenu">
                     <ul class="d-flex algnItmCent">
                         <span class="close_menu"></span>
-                        <li><a href="./index.html" class="active">home</a></li>
+                        <li><a href="./index.html">home</a></li>
                         <li><a href="./about.html">about us</a></li>
-                        <li><a href="./solutions.html">Solutions & Portfolio</a></li>
+                        <li><a href="./solutions.html" class="active">Solutions & Portfolio</a></li>
                     </ul>
                 </div>
                 <div class="headerBtn commBtn"><a href="./index.html#contactSec">Contact Us</a></div>
@@ -44,12 +48,41 @@
         <section class="BannerSec solutionsBanner d-flex algnItmCent sv-secGap col-100 floatLft clr relative">
             <div class="main-wrapper">
                 <div class="bannerCont col-100 floatLft clr relative">
-                    <div class="bannerTitle txt_gradient"><h1>Innovative <br><span>Solutions</span> for <br>Modern Challenges</h1></div>
-                    <div class="bannerTxt txt_gradient"><p>Explore our range of advanced detection systems and smart solutions designed to enhance safety and efficiency.​</p></div>
+                    <div class="bannerTitle txt_gradient textCenter"><h1>Innovative <br><span>Solutions</span> for <br>Modern Challenges</h1></div>
+                    <div class="bannerTxt txt_gradient textCenter"><p>Explore our range of advanced detection systems and smart solutions designed to enhance safety and efficiency.​</p></div>
                 </div>
             </div>
         </section>
-        <section class="BannerSec solutionsBanner-2 d-flex algnItmCent sv-secGap col-100 floatLft clr relative">
+        <section class="scrollSlider d-flex algnItmCent gp-2 sv-secGap col-100 floatLft clr relative">
+            <div class="main-wrapper">
+                <div class="CommSecTitle txt_gradient col-100 floatLft clr"><h3>What <span>We Offer?</span></h3></div>
+                <div class="card-stack-section col-100 floatLft clr relative">
+                    <div class="card-stack col-100 floatLft clr relative">
+                        <div class="stackcards col-100 floatLft clr">
+                            <div class="CommSecTitle txt_gradient col-100 floatLft clr"><h3>home <span>automation <br>Solutions</span></h3></div>
+                            <div class="bannerTitleSub txt_gradient textCenter"><p><span>Connected</span> living designed around <br>your life</p></div>
+                            <div class="bannerTxt txt_gradient textCenter" style="margin: 2em auto auto;"><p>Our home automation solutions bring comfort, control, and convenience into one intelligent system. Because the future of living is intuitive, we help you create homes that understand, respond, and evolve with you.</p></div>
+                        </div>
+                        <div class="stackcards col-100 floatLft clr">
+                            <div class="CommSecTitle txt_gradient col-100 floatLft clr"><h3>home <span>automation <br>Solutions</span></h3></div>
+                            <div class="bannerTitleSub txt_gradient textCenter"><p><span>Connected</span> living designed around <br>your life</p></div>
+                            <div class="bannerTxt txt_gradient textCenter" style="margin: 2em auto auto;"><p>Our home automation solutions bring comfort, control, and convenience into one intelligent system. Because the future of living is intuitive, we help you create homes that understand, respond, and evolve with you.</p></div>
+                        </div>
+                        <div class="stackcards col-100 floatLft clr">
+                            <div class="CommSecTitle txt_gradient col-100 floatLft clr"><h3>home <span>automation <br>Solutions</span></h3></div>
+                            <div class="bannerTitleSub txt_gradient textCenter"><p><span>Connected</span> living designed around <br>your life</p></div>
+                            <div class="bannerTxt txt_gradient textCenter" style="margin: 2em auto auto;"><p>Our home automation solutions bring comfort, control, and convenience into one intelligent system. Because the future of living is intuitive, we help you create homes that understand, respond, and evolve with you.</p></div>
+                        </div>
+                        <div class="stackcards col-100 floatLft clr">
+                            <div class="CommSecTitle txt_gradient col-100 floatLft clr"><h3>home <span>automation <br>Solutions</span></h3></div>
+                            <div class="bannerTitleSub txt_gradient textCenter"><p><span>Connected</span> living designed around <br>your life</p></div>
+                            <div class="bannerTxt txt_gradient textCenter" style="margin: 2em auto auto;"><p>Our home automation solutions bring comfort, control, and convenience into one intelligent system. Because the future of living is intuitive, we help you create homes that understand, respond, and evolve with you.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="BannerSec solutionsBanner-2 d-flex algnItmCent sv-secGap col-100 floatLft clr relative">
             <div class="main-wrapper">
                 <div class="bannerCont col-100 floatLft clr relative">
                     <div class="bannerTitle txt_gradient"><h2>home <span>automation</span> <br><span>solutions</span></h2></div>
@@ -149,7 +182,7 @@
                     <div class="bannerTxt txt_gradient"><p>Our industrial solutions connect systems, data, and operations into one intelligent ecosystem, enabling smarter production, predictive maintenance, and scalable performance.  From SCADA platforms to AI-powered, IoT-connected machinery, we help facilities monitor, automate, and optimize complex operations with precision, safety, and control.​</p></div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="solPgTabSec sv-secGap col-100 floatLft clr relative">
             <div class="main-wrapper">
                 <div class="bannerTitle txt_gradient col-100 floatLft clr relative textCenter"><h2>where <span>technology</span><br>Meets real life</h2></div>   
@@ -267,5 +300,46 @@
     <script src="./assets/js/jQuery/jquery-3.6.min.js"></script>
     <script src="./assets/js/slick-slider/slick.min.js"></script>
     <script src="./assets/js/custom.js"></script>
+
+    <script>
+gsap.registerPlugin(ScrollTrigger);
+
+const cards = gsap.utils.toArray(".stackcards");
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".card-stack-section",
+    start: "top top",
+    end: "+=" + (cards.length * window.innerHeight),
+    scrub: true,
+    pin: true,
+  }
+});
+
+// Set initial scale of all cards with decremental scaling
+cards.forEach((card, i) => {
+  gsap.set(card, { scale: 1 - (i * 0.05) }); // Decremental scaling (0.05 per card)
+});
+
+// Loop and animate each card
+cards.forEach((card, i) => {
+  if (i === cards.length - 1) return;
+
+  let next = cards[i + 1];
+  
+  tl.to(card, {
+    yPercent: -200,
+    scale: 0.9, // Scale down slightly when moving up
+    ease: "power1.inOut"
+  }, "+=0.3")
+  .to(next, {
+    scale: 1, // Next card scales back to normal (front card)
+    ease: "power1.inOut"
+  }, "<");
+});
+
+
+
+    </script>
 </body>
 </html>
