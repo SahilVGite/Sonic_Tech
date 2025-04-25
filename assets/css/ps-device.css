@@ -19,6 +19,8 @@
 
 
     .ourValueText p {font-size: 35px;}
+
+    .ehcTextBtn h3 {font-size: 44px; margin-bottom: 1.2em;}
   }
 
   @media (max-width:1256px){
@@ -30,7 +32,7 @@
       grid-auto-flow: dense;
     }
     .techGallInfo h5 {margin-bottom: 1.2em;}
-    .techLifeIcon {margin-bottom: 1.2em;}
+    .techLifeIcon {max-width: 48px; margin-bottom: 1.2em;}
   }
 
   @media (max-width:991px){
@@ -44,9 +46,13 @@
     .foundLife{max-width: 573px;}
     .techGallInfo {position: absolute; top: 22px; left: 22px; right: 22px; padding-right: 3em;}
     .rootsTree{width: 50%;}
+    
+    .vmText h4 {font-size: 30px;}
 
     .ourValueText h5 {font-size: 25px;}
     .ourValueText p {font-size: 25px;}
+
+    .ehcTextBtn h3 {font-size: 25px; margin-bottom: 1.2em;}
   }
 
 
@@ -70,15 +76,11 @@
   }
 
   @media (max-width:550px){
-    .grid-wrapper .tall {
-      grid-column: auto;
-      grid-row: auto;
-    }
+    .grid-wrapper .tall {grid-column: auto;grid-row: auto;}
+    .grid-wrapper .wide {grid-column: auto;}
+    .techLifeIcon {max-width: 35px;}
 
-    .grid-wrapper .wide {
-      grid-column: auto;
-    }
-
+    .vmText h4 {font-size: 25px;}
 
     .visionMissionBox {flex-direction: column; align-items: center;}
     .vmText{width: 100%;}
@@ -86,4 +88,12 @@
     .ourValuesInfo{flex-direction: column-reverse;}
     .ourValueText{max-width: 100%;}
     .ourValueImg {max-width: 100%;}
+  }
+
+  @media (max-width:390px){
+    .grid-wrapper {grid-auto-rows: 350px;}
+  }
+
+  @media (max-width:340px){
+    .grid-wrapper {grid-auto-rows: 320px;}
   }
