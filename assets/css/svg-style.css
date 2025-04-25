@@ -5,12 +5,14 @@ header.stickyHead{top: 0;background-color: #181516;}
 header.stickyHead .headerWrap .headerContent{background-color: transparent;}
 .headerWrap{max-width: 92.5%;margin: auto;}
 .headerContent{background:rgba(255,255,255,0.06);border-radius:66px;padding: 1.5em;}
-.brandLogo{max-width: 104px;}
+.brandLogo{max-width: 150px;}
 .headMenu > ul{gap: 1.875em;}
 .headMenu a{font-size: var(--smallestTxt);color: var(--txt-primary-color);font-weight: var(--fw-semi-bold);font-family: var(--secondary-font);text-transform: uppercase;}
 .headMenu a.active{color: var(--Tertiary-color);}
 .ham_menu{display: none;}
 body.menu-open{overflow: hidden;}
+.menu-overlay{background:rgba(0,0,0,0.4);width:100%;height:100vh;position:absolute;z-index:99;}
+
 
 /* Section With Min-height 100vh */
 .wtWeOffSec,.BannerSec,.wtWeDoSec,.TmPartnersSec,.innoActSec,.ContactFrm{min-height: 100vh;}
@@ -41,7 +43,7 @@ body.menu-open{overflow: hidden;}
 .TmPartnersSecCards{margin-top: 5em;}
 
 .innoActSec{background-image: url(../images/innovAction-bg.png);background-position: center;background-size: 100% 100%;background-repeat: no-repeat;}
-.innovActiv_p > *{max-width: 39%;margin: auto;}
+.innovActiv_p > *{max-width: 50%;margin: auto;}
 .innoActinSliderSec{margin-bottom: 2em;}
 .innoActinSliderImg{max-width: 65%;border-radius: 20px;overflow: hidden;}
 .innoActinSliderTxt{max-width: 25%;}
@@ -52,10 +54,14 @@ body.menu-open{overflow: hidden;}
 .ContactFrmContTxt *{text-align: left;}
 .ContactFormCont{background: rgba(255, 255, 255, 0.05);border: 1px solid rgba(213, 215, 216, 0.3);border-radius: 20px;padding: 2.5em;}
 
-.ContactFormFld input{width: 100%;background-color: transparent;padding: 1em;border: none;border-bottom: 0.8px solid rgba(213, 215, 216, 0.15);outline: none;font-size: var(--body-sub);color: var(--txt-primary-color);font-weight: var(--fw-regular);}
+.ContactFormFld input{width: 100%;background-color: transparent;padding: 0.6em 0;border: none;border-bottom: 0.8px solid rgba(213, 215, 216, 0.15);outline: none;font-size: var(--body-sub);color: var(--txt-primary-color);font-weight: var(--fw-regular);}
 .ContactForm,.ContactFrmContTxt{width: 40%;}
 .ContactFormCont > ul > li{margin-bottom: 1em;}
 .ContactFrm .main-wrapper{max-width: 1300px;width: 90%;}
+.floating-labelInp label.floating-label{font-size: var(--body-sub);color: var(--txt-primary-color);font-weight: var(--fw-regular);font-family: var(--primary-font);position:absolute;top:50%;left:0;transform:translateY(-50%);pointer-events:none;transition:all 0.3s ease;z-index:1;padding:0 !important;line-height:1.3;}
+.floating-labelInp label.floating-label.active{top:-15px;left:0px;opacity:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100% - 0em);font-size:var(--body-sub);}
+.telFlagLab{align-items: baseline;gap: 0.4em;}
+.telFlagLab > img{max-width: 16px;}
 
 
 button.slick-next.slick-arrow,button.slick-prev.slick-arrow{background-repeat: no-repeat;background-position: center;width: 78px;height: 78px;top: auto;bottom: -150%;left: 40%;right: auto;}

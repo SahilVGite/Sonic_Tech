@@ -1,5 +1,19 @@
 $(document).ready(function () {
 
+  var hash = window.location.hash;
+
+    if (hash === "#contactSec") {
+      var $target = $(hash);
+      if ($target.length) {
+        var offset = 70; // Adjust based on your fixed header height
+        setTimeout(function () {
+          $('html, body').animate({
+            scrollTop: $target.offset().top - offset
+          }, 600);
+        }, 100); // slight delay ensures the browser has jumped to the anchor
+      }
+    }
+
   
   // Sticky Header
   $(window).on("scroll", function () {
@@ -147,6 +161,39 @@ $(document).ready(function () {
     arrows: false,
     // centerMode: true,
     focusOnSelect: true
+  });
+
+
+
+
+
+    // Code to handle floating lable
+  // Function to toggle 'active' class based on value or focus
+  function toggleFloatingLabel($element) {
+    const hasValue = $element.val() !== '' && (!$element.is('select') || $element.find('option:selected').val() !== '');
+    const isFocused = $element.is(':focus');
+
+    const $label = $element.siblings('.floating-label');
+    $label.toggleClass('active', hasValue || isFocused);
+
+    // 👇 Apply color change if it's a <select>
+    if ($element.is('select')) {
+      $element.toggleClass('has-value', hasValue);
+    }
+  }
+
+
+  // Event handler for focus, blur, and change
+  function handleFloatingLabel(event) {
+    toggleFloatingLabel($(this));
+  }
+
+  // Apply event handlers to inputs and selects
+  $('.floating-labelInp').on('focus blur change', 'input, select', handleFloatingLabel);
+
+  // Check initial state on page load
+  $('.floating-labelInp input, .floating-labelInp select').each(function () {
+    toggleFloatingLabel($(this));
   });
   
 

@@ -10,6 +10,7 @@
 @media only screen and (max-width: 1366px){
     :root{--banner-title:84px;--main-title:64px;--common-heading:32px;--Sub_Heading:24px;--body:20px;--body-sub:18px;--body-subTxt:16px;--smallestTxt:14px;--secGap:80px;}
     .wtWeDoSecCardIcon{max-width: 15px;}
+    .brandLogo{max-width:104px;}
 }
 @media only screen and (max-width: 1280px){
 
@@ -49,7 +50,7 @@
     .wtWeOffContTxt,.wtWeOffContImg{width: 100%;max-width: 100%;text-align: center;}
     .BannerSec{background-size:150% 100%;}
 
-    .headMenu{position: fixed;right: -9999px;max-width: 320px;width: 100%;top: 0;height: 100%;transition: all 0.3s;}
+    .headMenu{position: fixed;right: -9999px;max-width: 320px;width: 100%;top: 0;height: 100%;transition: all 0.3s;z-index: 999;}
     .headMenu.active{right: 0;}
     .headMenu > ul{flex-direction: column;align-items: flex-start;background-color: #181516;height: 100%;padding: 5em 3em;}
     .close_menu{position:absolute;right:15px;top:15px;width:20px;height:20px;background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');background-repeat:no-repeat;background-size:contain;cursor:pointer;}
