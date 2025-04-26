@@ -15,9 +15,11 @@
     <link rel="stylesheet" href="./assets/css/svg-style.css">
     <link rel="stylesheet" href="./assets/css/svg-device.css">
 
-    <!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+     <!-- GSAP -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+     <!-- ScrollTrigger Plugin -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
@@ -68,7 +70,23 @@
                                 <div class="stackcardTitleSub txt_gradient"><p><span>Connected</span> living designed around your life</div>
                                 <div class="stackcardTxt txt_gradient"><p>Our home automation solutions bring comfort, control, and convenience into one intelligent system. Because the future of living is intuitive, we help you create homes that understand, respond, and evolve with you.</p></div>
                             </div>
-                            <div class="stackcardImg"><img src="./assets/images/solution_dummy.png" alt=""></div>
+                            <div class="stackcardImg"><img src="./assets/images/offer1.png" alt=""></div>
+                        </div>
+                        <div class="stackcards d-flex algnItmCent justContSpBtw flxFlwRwWrp col-100 floatLft clr">
+                            <div class="stackcardTxts">
+                                <div class="stackcardTitle txt_gradient"><h6>Advanced <span>Detection</span> Systems</h6></div>
+                                <div class="stackcardTitleSub txt_gradient"><p><span>Connecting</span> signals that empower safer decisions</div>
+                                <div class="stackcardTxt txt_gradient"><p>Our detection systems don’t just detect threats, they decode patterns, predict risks, and respond in real-time. From public spaces to critical infrastructure, we help safeguard what matters most, because awareness is the first step to protection.</p></div>
+                            </div>
+                            <div class="stackcardImg"><img src="./assets/images/offer2.png" alt=""></div>
+                        </div>
+                        <div class="stackcards d-flex algnItmCent justContSpBtw flxFlwRwWrp col-100 floatLft clr">
+                            <div class="stackcardTxts">
+                                <div class="stackcardTitle txt_gradient"><h6>energy <span>management Solutions</span></h6></div>
+                                <div class="stackcardTitleSub txt_gradient"><p><span>Connecting</span> energy systems to power cleaner futures</div>
+                                <div class="stackcardTxt txt_gradient"><p>Our energy management solutions turn complex energy flows into intelligent systems that help cities run cleaner and smarter. We power sustainable progress by enabling communities to manage energy wisely and move toward a greener future.</p></div>
+                            </div>
+                            <div class="stackcardImg"><img src="./assets/images/offer3.png" alt=""></div>
                         </div>
                         <div class="stackcards d-flex algnItmCent justContSpBtw flxFlwRwWrp col-100 floatLft clr">
                             <div class="stackcardTxts">
@@ -76,23 +94,7 @@
                                 <div class="stackcardTitleSub txt_gradient"><p><span>Connected</span> living designed around your life</div>
                                 <div class="stackcardTxt txt_gradient"><p>Our home automation solutions bring comfort, control, and convenience into one intelligent system. Because the future of living is intuitive, we help you create homes that understand, respond, and evolve with you.</p></div>
                             </div>
-                            <div class="stackcardImg"><img src="./assets/images/solution_dummy.png" alt=""></div>
-                        </div>
-                        <div class="stackcards d-flex algnItmCent justContSpBtw flxFlwRwWrp col-100 floatLft clr">
-                            <div class="stackcardTxts">
-                                <div class="stackcardTitle txt_gradient"><h6>smart home <span>automation Solutions</span></h6></div>
-                                <div class="stackcardTitleSub txt_gradient"><p><span>Connected</span> living designed around your life</div>
-                                <div class="stackcardTxt txt_gradient"><p>Our home automation solutions bring comfort, control, and convenience into one intelligent system. Because the future of living is intuitive, we help you create homes that understand, respond, and evolve with you.</p></div>
-                            </div>
-                            <div class="stackcardImg"><img src="./assets/images/solution_dummy.png" alt=""></div>
-                        </div>
-                        <div class="stackcards d-flex algnItmCent justContSpBtw flxFlwRwWrp col-100 floatLft clr">
-                            <div class="stackcardTxts">
-                                <div class="stackcardTitle txt_gradient"><h6>smart home <span>automation Solutions</span></h6></div>
-                                <div class="stackcardTitleSub txt_gradient"><p><span>Connected</span> living designed around your life</div>
-                                <div class="stackcardTxt txt_gradient"><p>Our home automation solutions bring comfort, control, and convenience into one intelligent system. Because the future of living is intuitive, we help you create homes that understand, respond, and evolve with you.</p></div>
-                            </div>
-                            <div class="stackcardImg"><img src="./assets/images/solution_dummy.png" alt=""></div>
+                            <div class="stackcardImg"><img src="./assets/images/offer4.png" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -318,44 +320,44 @@
     <script src="./assets/js/custom.js"></script>
 
     <script>
-gsap.registerPlugin(ScrollTrigger);
+        gsap.registerPlugin(ScrollTrigger);
 
-const cards = gsap.utils.toArray(".stackcards");
+        const cards = gsap.utils.toArray(".stackcards");
 
-let tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".card-stack-section",
-    start: "top top",
-    end: "+=" + (cards.length * window.innerHeight),
-    scrub: true,
-    pin: true,
-  }
-});
+        let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".card-stack-section",
+            start: "center center",
+            end: "+=" + (cards.length * window.innerHeight),
+            scrub: true,
+            pin: true,
+        }
+        });
 
-// Set initial scale of all cards with decremental scaling
-cards.forEach((card, i) => {
-  gsap.set(card, { scale: 1 - (i * 0.05) }); // Decremental scaling (0.05 per card)
-});
+        // Set initial z-index and scale for each card
+        cards.forEach((card, i) => {
+        gsap.set(card, {
+            scale: 1 - (i * 0.05),
+            zIndex: cards.length - i
+        });
+        });
 
-// Loop and animate each card
-cards.forEach((card, i) => {
-  if (i === cards.length - 1) return;
+        // Animate the stack
+        cards.forEach((card, i) => {
+        if (i === cards.length - 1) return;
 
-  let next = cards[i + 1];
-  
-  tl.to(card, {
-    yPercent: -200,
-    scale: 0.9, // Scale down slightly when moving up
-    ease: "power1.inOut"
-  }, "+=0.3")
-  .to(next, {
-    scale: 1, // Next card scales back to normal (front card)
-    ease: "power1.inOut"
-  }, "<");
-});
+        let next = cards[i + 1];
 
-
-
+        tl.to(card, {
+            yPercent: -200,
+            scale: 1 - ((i + 1) * 0.05),
+            ease: "power1.inOut"
+        }, "+=0.3")
+        .to(next, {
+            scale: 1 - (i * 0.05),
+            ease: "power1.inOut"
+        }, "<");
+        });
     </script>
 </body>
 </html>

@@ -18,9 +18,11 @@
     <link rel="stylesheet" href="./assets/css/ps-device.css">
     <link rel="stylesheet" href="./assets/css/svg-device.css">
 
-        <!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+     <!-- GSAP -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+     <!-- ScrollTrigger Plugin -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
@@ -137,35 +139,26 @@
         <!-- vision mission -->
         <section class="visionMission col-100 sv-secGap floatLft relative clr">
             <div class="main-wrapper">
-                <div class="visionMissionBox d-flex col-100 floatLft relative clr">
-                    <div class="vmText txt_gradient floatLft relative clr">
-                        <h4><span>Mission</span></h4>
-                        <p class="Comm_Txt">We design and integrate intelligent, scalable systems that simplify operations, enhance safety, save energy, and power everyday progress across homes, industries, and public infrastructure.</p>
-                    </div>
-
-                    <div class="vmImg floatLft relative clr">
-                        <img src="./assets/images/rocket.png" alt="">
-                    </div>
-
-                    <div class="vmText vmTxtRgt txt_gradient floatLft relative clr">
-                        <h4><span>Vision</span></h4>
-                        <p class="Comm_Txt">To be the region’s trusted AI-powered technology partner, leading the integration of intelligent systems that improve everyday life.</p>
-                    </div>
+              <div class="visionMissionBox d-flex col-100 floatLft relative clr">
+                
+                <div class="vmText txt_gradient floatLft relative clr" id="mission">
+                  <h4><span>Mission</span></h4>
+                  <p class="Comm_Txt">We design and integrate intelligent, scalable systems that simplify operations, enhance safety, save energy, and power everyday progress across homes, industries, and public infrastructure.</p>
                 </div>
-
-                <!-- <div class="visionMissionBox visionBox d-flex col-100 floatLft relative clr">
-                    <div class="vmText txt_gradient floatLft relative clr">
-                        <h4><span>Vision</span></h4>
-                        <p class="Comm_Txt">To be the region’s trusted AI-powered technology partner, leading the integration of intelligent systems that improve everyday life.</p>
-                    </div>
-
-                    <div class="vmImg floatLft relative clr">
-                        <img src="./assets/images/vision.png" alt="">
-                    </div>
-                </div> -->
-
+          
+                <div class="vmImg floatLft relative clr" id="rocket">
+                  <img src="./assets/images/rocket.png" alt="">
+                </div>
+          
+                <div class="vmText vmTxtRgt txt_gradient floatLft relative clr" id="vision">
+                  <h4><span>Vision</span></h4>
+                  <p class="Comm_Txt">To be the region’s trusted AI-powered technology partner, leading the integration of intelligent systems that improve everyday life.</p>
+                </div>
+          
+              </div>
             </div>
-        </section>
+          </section>
+          
 
         <!-- our value -->
         <section class="ourValues col-100 sv-secGap floatLft relative clr">
@@ -181,6 +174,18 @@
                     </div>
                     <div class="ourValueText tab-content txt_gradient col-100 floatLft relative clr" id="tab-1">
                         <h5 class="textUp"><span>RELIABILITY</span></h5>
+                        <p>We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
+                    </div>
+                    <div class="ourValueText tab-content txt_gradient col-100 floatLft relative clr" id="tab-2">
+                        <h5 class="textUp"><span>CUSTOMER CENTRICITY</span></h5>
+                        <p>We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
+                    </div>
+                    <div class="ourValueText tab-content txt_gradient col-100 floatLft relative clr" id="tab-3">
+                        <h5 class="textUp"><span>INNOVATION</span></h5>
+                        <p>We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
+                    </div>
+                    <div class="ourValueText tab-content txt_gradient col-100 floatLft relative clr" id="tab-4">
+                        <h5 class="textUp"><span>AGILITY</span></h5>
                         <p>We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
                     </div>
 
@@ -280,6 +285,42 @@
     <script src="./assets/js/jQuery/jquery-3.6.min.js"></script>
     <script src="./assets/js/slick-slider/slick.min.js"></script>
     <script src="./assets/js/custom.js"></script>
-      
+      <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Timeline for whole section
+        const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".visionMission",
+            start: "center center",   // when the top of the section hits the center of the viewport
+            end: "+=2000",         // scroll distance
+            scrub: true,           // smooth scrubbing
+            pin: true,             // lock (pin) the section
+            anticipatePin: 1,
+        }
+        });
+
+        // Animate the Rocket coming up
+        tl.from("#rocket img", {
+        y: 300,
+        opacity: 0,
+        duration: 1,
+        })
+
+        // Animate Left Text (Mission) after rocket
+        tl.from("#mission", {
+        y: 200,
+        opacity: 0,
+        duration: 1,
+        }, "+=0.5") // slight delay
+
+        // Animate Right Text (Vision) after Mission
+        tl.from("#vision", {
+        y: 200,
+        opacity: 0,
+        duration: 1,
+        }, "+=0.5");
+
+      </script>
 </body>
 </html>

@@ -7,6 +7,8 @@
     :root{--banner-title:65px;--main-title:55px;--common-heading:34px;--Sub_Heading:25px;--body:22px;--body-sub:20px;--body-subTxt:18px;--smallestTxt:16px;--secGap:100px;}
     header{top:1.5em;}
     button.slick-next.slick-arrow,button.slick-prev.slick-arrow{width:55px;height:55px;left: 42%;bottom: -100%;}
+    .wtWeDoSecCardIcon,.wtWeDoSecCardIcon img{max-width:30px;}
+
 }
 @media only screen and (max-width: 1500px){
     .ourValueImg{max-width:50%;}
@@ -19,7 +21,7 @@
     .brandLogo{max-width:104px;}
 }
 @media only screen and (max-width: 1280px){
-    .ourValueImg .tabBtn.active{width:175px;height:175px;}
+    .ourValueImg .tabBtn-container .tabBtn.current{width:175px;height:175px;}
     .ourValueImg .tabBtn{width: 95px;height: 95px;}
     .stackcardTxts{padding:3em;}
 
@@ -30,6 +32,7 @@
     .advDetSecSliderCont > .advDetSecSliderContImg{max-width:30%;}
     .stackcards .bannerTxt{max-width: 100%;}
     .stackcards br{display: none;}
+    .wtWeDoSecCardIcon,.wtWeDoSecCardIcon img{max-width:25px;}
 
 }
 @media only screen and (max-width: 1024px){
@@ -51,11 +54,12 @@
     button.slick-next.slick-arrow{background-image: url(../images/nextBtn.png);transform: translateX(25px);}
     .innoActinSliderTxt{max-width:50%;}
     .enerSoluSec .enerSoluSecCard > .advDetSecSliderCont{max-width: 100%;}
-    .ourValueImg .tabBtn.active{width:150px;height:150px;font-size: 1rem;}
+    .ourValueImg .tabBtn-container .tabBtn.current{width:150px;height:150px;font-size: 1rem;}
     .ourValueImg .tabBtn{width: 75px;height: 75px;}
 }
 @media only screen and (max-width: 800px){
     .stackcardTxts{padding:2em;}
+    .innovActiv_p > *,.innoActinSliderImg{max-width:100%;}
 
 }
 @media only screen and (max-width: 768px){
@@ -74,7 +78,7 @@
     .ham_menu{display: block;}
     .telFlagLab > img{max-width: 12px;}
     .telFlagLab.active > img{max-width:10px;}
-    .ourValueImg .tabBtn.active{width:120px;height:120px;}
+    .ourValueImg .tabBtn-container .tabBtn.current{width:120px;height:120px;}
     .ourValueImg .tabBtn{width: 60px;height: 60px;font-size: 0.4rem;}
 }
 @media only screen and (max-width: 600px){
