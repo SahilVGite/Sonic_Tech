@@ -1,25 +1,33 @@
-@media only screen and (max-width: 1700px){}
+@media only screen and (max-width: 1700px){
+    .ourValueImg{max-width:40%;}
+    .ourValueText{max-width:55%;}
+
+}
 @media only screen and (max-width: 1600px){
-    :root{--banner-title:88px;--main-title:68px;--common-heading:38px;--Sub_Heading:28px;--body:24px;--body-sub:20px;--body-subTxt:18px;--smallestTxt:16px;--secGap:100px;}
+    :root{--banner-title:65px;--main-title:55px;--common-heading:34px;--Sub_Heading:25px;--body:22px;--body-sub:20px;--body-subTxt:18px;--smallestTxt:16px;--secGap:100px;}
     header{top:1.5em;}
     button.slick-next.slick-arrow,button.slick-prev.slick-arrow{width:55px;height:55px;left: 42%;bottom: -100%;}
-    .stackcards{padding: 3em;}
 }
-@media only screen and (max-width: 1500px){}
+@media only screen and (max-width: 1500px){
+    .ourValueImg{max-width:50%;}
+    .ourValueText{max-width:50%;}
+}
 @media only screen and (max-width: 1440px){}
 @media only screen and (max-width: 1366px){
-    :root{--banner-title:84px;--main-title:64px;--common-heading:32px;--Sub_Heading:24px;--body:20px;--body-sub:18px;--body-subTxt:16px;--smallestTxt:14px;--secGap:80px;}
+    :root{--banner-title:60px;--main-title:50px;--common-heading:32px;--Sub_Heading:24px;--body:20px;--body-sub:18px;--body-subTxt:16px;--smallestTxt:14px;--secGap:80px;}
     .wtWeDoSecCardIcon{max-width: 15px;}
     .brandLogo{max-width:104px;}
 }
 @media only screen and (max-width: 1280px){
+    .ourValueImg .tabBtn.active{width:175px;height:175px;}
+    .ourValueImg .tabBtn{width: 95px;height: 95px;}
+    .stackcardTxts{padding:3em;}
 
 }
 @media only screen and (max-width: 1100px){
-    :root{--banner-title:70px;--main-title:60px;--common-heading:30px;--Sub_Heading:22px;--body:18px;--body-sub:17px;--body-subTxt:15px;--smallestTxt:13px;--secGap:60px;}
+    :root{--banner-title:55px;--main-title:45px;--common-heading:30px;--Sub_Heading:22px;--body:18px;--body-sub:17px;--body-subTxt:15px;--smallestTxt:13px;--secGap:60px;}
     .innovActiv_p > *{max-width:75%;}
     .advDetSecSliderCont > .advDetSecSliderContImg{max-width:30%;}
-    .stackcards{padding:3em 2em;}
     .stackcards .bannerTxt{max-width: 100%;}
     .stackcards br{display: none;}
 
@@ -32,7 +40,7 @@
 
 }
 @media only screen and (max-width: 950px){
-    :root{--banner-title:60px;--main-title:50px;--common-heading:26px;--Sub_Heading:20px;--body:17px;--body-sub:16px;--body-subTxt:14px;--smallestTxt:13px;--secGap:50px;}
+    :root{--banner-title:50px;--main-title:40px;--common-heading:26px;--Sub_Heading:20px;--body:17px;--body-sub:16px;--body-subTxt:14px;--smallestTxt:13px;--secGap:50px;}
     .wtWeOffSec,.wtWeDoSec,.TmPartnersSec,.innoActSec,.ContactFrm{min-height: auto;}
     main .BannerSec:first-child{padding-top: calc(var(--secGap) * 3);}
     .wtWeOffContTxt{max-width:50%;}
@@ -43,9 +51,13 @@
     button.slick-next.slick-arrow{background-image: url(../images/nextBtn.png);transform: translateX(25px);}
     .innoActinSliderTxt{max-width:50%;}
     .enerSoluSec .enerSoluSecCard > .advDetSecSliderCont{max-width: 100%;}
+    .ourValueImg .tabBtn.active{width:150px;height:150px;font-size: 1rem;}
+    .ourValueImg .tabBtn{width: 75px;height: 75px;}
+}
+@media only screen and (max-width: 800px){
+    .stackcardTxts{padding:2em;}
 
 }
-@media only screen and (max-width: 800px){}
 @media only screen and (max-width: 768px){
     :root{--banner-title:50px;--main-title:40px;--common-heading:22px;--Sub_Heading:19px;--body:16px;--body-sub:15px;--body-subTxt:13px;--smallestTxt:12px;--secGap:50px;}
     .TmPartnersSecCard > img{max-width:60px;}
@@ -62,6 +74,8 @@
     .ham_menu{display: block;}
     .telFlagLab > img{max-width: 12px;}
     .telFlagLab.active > img{max-width:10px;}
+    .ourValueImg .tabBtn.active{width:120px;height:120px;}
+    .ourValueImg .tabBtn{width: 60px;height: 60px;font-size: 0.4rem;}
 }
 @media only screen and (max-width: 600px){
     :root{--banner-title:30px;--main-title:25px;--common-heading:20px;--Sub_Heading:18px;--body:15px;--body-sub:14px;--body-subTxt:12px;--smallestTxt:12px;--secGap:50px;}
@@ -86,6 +100,17 @@
     .techTabCard{width:calc(50% - 1em);}    
     .bannerTitle br{display: none;}
     .bannerTxt,.solutionsBanner .bannerTxt{max-width: 100%;}
+    .ourValuesInfo{flex-direction: column-reverse;}
+    .ourValuesInfo > *{width: 100%;max-width: 100%;}
+    .ourValueImg .tabBtn-container .tabBtn{width:20vw;height:20vw;font-size: 2vw;}
+    .ourValueImg .tabBtn-container .tabBtn.current{width:38vw;height:38vw;}
+    .ourValueImg .tabBtn-container{aspect-ratio:1.5 / 1.3;}
+    .ourValueImg .tabBtn-container .tabBtn:nth-child(2){top:0%;left:30%;}
+    .ourValueImg .tabBtn-container .tabBtn:nth-child(3){top:30%;left:30%;}
+    .ourValueImg .tabBtn-container .tabBtn:nth-child(4){top:50%;left:50%;}
+    .ourValueImg .tabBtn-container .tabBtn:nth-child(5){top:55%;right:0%;}
+    .stackcards{flex-direction: column;}
+    .stackcards > *{max-width: 100%;}
 }
 @media only screen and (max-width: 550px){}
 @media only screen and (max-width: 400px){

@@ -1,3 +1,8 @@
+
+
+
+
+
 $(document).ready(function () {
 
   $('.stackcards').each(function(i, el) {
@@ -202,4 +207,27 @@ $(document).ready(function () {
   });
   
 
+});
+
+
+// Horizontal scroll trigger of home page
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.registerPlugin(ScrollTrigger);
+
+let horizontalSection = document.querySelector('.offeringSecScrollerSub');
+
+console.log(horizontalSection.scrollWidth);
+
+gsap.to('.offeringSecScrollerSub', {
+    x: () => horizontalSection.scrollWidth * -1,
+    xPercent: 100,
+    scrollTrigger: {
+        trigger: '.offeringSecScrollerSub',
+        start: 'center center',
+        end: '+=2000px',
+        pin: '.wtWeOffSec',
+        scrub: true,
+        invalidateOnRefresh: true
+    }
 });

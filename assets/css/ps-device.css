@@ -18,7 +18,7 @@
     }
 
 
-    .ourValueText p {font-size: 35px;}
+    .ourValueText p {font-size: 28px;}
 
     .ehcTextBtn h3 {font-size: 44px; margin-bottom: 1.2em;}
   }
@@ -33,6 +33,9 @@
     }
     .techGallInfo h5 {margin-bottom: 1.2em;}
     .techLifeIcon {max-width: 48px; margin-bottom: 1.2em;}
+    .ourValueText p {
+      font-size: 22px;
+  }
   }
 
   @media (max-width:991px){
@@ -51,6 +54,7 @@
 
     .ourValueText h5 {font-size: 25px;}
     .ourValueText p {font-size: 25px;}
+    .ourValueText p{font-size:18px;}
 
     .ehcTextBtn h3 {font-size: 25px; margin-bottom: 1.2em;}
   }

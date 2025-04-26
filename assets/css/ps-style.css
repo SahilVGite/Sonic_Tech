@@ -72,7 +72,7 @@
 
 /* EHC Section */
 .ehcTextBtn{display: flex; justify-content: center; align-items: center; flex-direction: column;}
-.ehcTextBtn h3{font-size: 44px; margin-bottom: 1.75em;}
+.ehcTextBtn h3{font-size: 44px; margin-bottom: 0.5em;}
 
 
 

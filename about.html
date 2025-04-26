@@ -13,10 +13,14 @@
     <link rel="stylesheet" href="./assets/css/init.css">
     <link rel="stylesheet" href="./assets/js/slick-slider/slick-theme.css">
     <link rel="stylesheet" href="./assets/js/slick-slider/slick.css">
-    <link rel="stylesheet" href="./assets/css/svg-style.css">
-    <link rel="stylesheet" href="./assets/css/svg-device.css">
     <link rel="stylesheet" href="./assets/css/ps-style.css">
+    <link rel="stylesheet" href="./assets/css/svg-style.css">
     <link rel="stylesheet" href="./assets/css/ps-device.css">
+    <link rel="stylesheet" href="./assets/css/svg-device.css">
+
+        <!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
@@ -27,8 +31,8 @@
                 <div class="headMenu">
                     <ul class="d-flex algnItmCent">
                         <span class="close_menu"></span>
-                        <li><a href="./index.html" class="active">home</a></li>
-                        <li><a href="./about.html">about us</a></li>
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="./about.html" class="active">about us</a></li>
                         <li><a href="./solutions.html">Solutions & Portfolio</a></li>
                     </ul>
                 </div>
@@ -46,6 +50,10 @@
     <main>
         <!-- About Bann -->
         <section class="BannerSec aboutBanner d-flex algnItmCent sv-secGap col-100 floatLft clr relative">
+            <video autoplay muted loop playsinline class="bgVideo">
+                <source src="./assets/videos/AbtVid.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             <div class="main-wrapper">
                 <div class="bannerCont col-100 floatLft clr relative">
                     <div class="bannerTitle txt_gradient"><h1>We<span>Connect<br></span> what Matters</h1></div>
@@ -160,76 +168,43 @@
         </section>
 
         <!-- our value -->
-        <sectio class="ourValues col-100 sv-secGap floatLft relative clr">
+        <section class="ourValues col-100 sv-secGap floatLft relative clr">
             <div class="main-wrapper">
                 <div class="techLifeInfo col-100 floatLft relative clr">
                     <div class="CommSecTitle ourValHead  txt_gradient"><h3 class="textLeft">Our <span>Values</span></h3></div>
                 </div>
 
-                <div class="ourValuesInfo d-flex col-100 floatLft relative clr">
-                    <div class="ourValueText txt_gradient col-100 floatLft relative clr">
+                <div class="ourValuesInfo d-flex justContSpBtw col-100 floatLft relative clr">
+                    <div class="ourValueText tab-content active txt_gradient col-100 floatLft relative clr" id="tab-0">
                         <h5 class="textUp"><span>Intuition</span></h5>
-                        <p>We integrate AI, IoT, and SCADA technologies into scalable platforms that improve visibility, safety, and performance across energy, utilities, and urban services.</p>
+                        <p>We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
+                    </div>
+                    <div class="ourValueText tab-content txt_gradient col-100 floatLft relative clr" id="tab-1">
+                        <h5 class="textUp"><span>RELIABILITY</span></h5>
+                        <p>We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
                     </div>
 
                     <div class="ourValueImg col-100 floatLft relative clr">
-                        <img src="./assets/images/ourValuImg.png" alt="">
+                        <div class="tabBtn-container">
+                            <div class="tabBtn active current" data-id="tab-0">INTUITION</div>
+                            <div class="tabBtn"  data-id="tab-1">RELIABILITY</div>
+                            <div class="tabBtn" data-id="tab-2">CUSTOMER CENTRICITY</div>
+                            <div class="tabBtn" data-id="tab-3">INNOVATION</div>
+                            <div class="tabBtn" data-id="tab-4">AGILITY</div>
+                        </div>                                                
                     </div>
                 </div>
             </div>
 
             
-        </sectio>
+        </section>
 
-        <!-- our value -->
-        <!-- <sectio class="ourValues col-100 sv-secGap floatLft relative clr">
-            <div class="techLifeInfo col-100 floatLft relative clr">
-                <div class="CommSecTitle txt_gradient"><h3>Our <span>Values</span></h3></div>
-            </div>
-
-            <div class="ourValueSlide col-100 floatLft relative clr">
-                <div class="ovSlideItem txt_gradient">
-                    <h5 class="textUp"><span>Agility</span></h5>
-                    <p>We embed adaptive technology that ensures reliability and resilience, even in the most demanding industrial and energy-intensive settings.
-                    </p>
-                </div>
-
-                <div class="ovSlideItem txt_gradient">
-                    <h5 class="textUp"><span>Agility</span></h5>
-                    <p>We embed adaptive technology that ensures reliability and resilience, even in the most demanding industrial and energy-intensive settings.
-                    </p>
-                </div>
-
-                <div class="ovSlideItem txt_gradient">
-                    <h5 class="textUp"><span>Agility</span></h5>
-                    <p>We embed adaptive technology that ensures reliability and resilience, even in the most demanding industrial and energy-intensive settings.
-                    </p>
-                </div>
-
-                <div class="ovSlideItem txt_gradient">
-                    <h5 class="textUp"><span>Agility</span></h5>
-                    <p>We embed adaptive technology that ensures reliability and resilience, even in the most demanding industrial and energy-intensive settings.
-                    </p>
-                </div>
-
-                <div class="ovSlideItem txt_gradient">
-                    <h5 class="textUp"><span>Agility</span></h5>
-                    <p>We embed adaptive technology that ensures reliability and resilience, even in the most demanding industrial and energy-intensive settings.
-                    </p>
-                </div>
-
-                <div class="ovSlideItem txt_gradient">
-                    <h5 class="textUp"><span>Agility</span></h5>
-                    <p>We embed adaptive technology that ensures reliability and resilience, even in the most demanding industrial and energy-intensive settings.
-                    </p>
-                </div>
-            </div>
-        </sectio> -->
 
 
         <!-- EHC section -->
         <section class="techEhcSec col-100 sv-secGap floatLft relative clr">
             <div class="main-wrapper">
+                <div class="techEhcSecImg col-100 floatLft relative clr"><img src="./assets/images/ehc_invesment.png" alt="EHC"></div>
                 <div class="ehcTextBtn txt_gradient textCenter col-100 floatLft relative clr">
                     <h3><span>Sonic Tech is an EHC Subsidiary</span></h3>
                     <div class="ehcBtn commBtn textCenter floatLft relative d-flex">
@@ -239,7 +214,6 @@
             </div>
         </section>
     </main>
-
     <footer>
         <div class="main-wrapper">
             <div class="footerContent d-flex justContSpBtw sv-secGap col-100 floatLft clr relative">
@@ -306,5 +280,6 @@
     <script src="./assets/js/jQuery/jquery-3.6.min.js"></script>
     <script src="./assets/js/slick-slider/slick.min.js"></script>
     <script src="./assets/js/custom.js"></script>
+      
 </body>
 </html>

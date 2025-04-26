@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="./assets/css/init.css">
     <link rel="stylesheet" href="./assets/css/svg-style.css">
     <link rel="stylesheet" href="./assets/css/svg-device.css">
+
+        <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
@@ -42,6 +48,10 @@
     </header>
     <main>
         <section class="BannerSec hmBanner d-flex algnItmCent sv-secGap col-100 floatLft clr relative">
+            <video autoplay muted loop playsinline class="bgVideo">
+                <source src="./assets/videos/HmVid.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             <div class="main-wrapper">
                 <div class="bannerCont col-100 floatLft clr relative">
                     <div class="bannerTitle txt_gradient"><h1><span>Connecting<br></span> what Matters</h1></div>
@@ -82,16 +92,33 @@
                     <div class="CommSecTitle txt_gradient col-100 floatLft clr"><h3>What <span>We Offer?</span></h3></div>
                 </div>
             </div>
-            <div class="offeringSec col-100 floatLft clr">
-                <div class="main-wrapper">
-                    <div class="wtWeOffCont d-flex algnItmCent justContSpBtw gp-1 col-100 floatLft clr relative">
-                        <div class="wtWeOffContTxt">
-                            <div class="wtWeOffContTxtSubHead margiBot1em"><h6>Home Automation Solutions</h6></div>
-                            <div class="wtWeOffContTxtHead txt_gradient margiBot1em"><h4><span>Connected Living Designed Around your Life</span></h4></div>
-                            <div class="Comm_Txt wtWeDoSecCardp margiBot2em"><p>Our home automation solutions bring comfort, control, and convenience into one intelligent system. Because the future of living is intuitive, we help you create homes that understand, respond, and evolve with you.</p></div>
-                            <div class="commBtn"><a href="javascript:;">Learn More</a></div>
+            <div class="offeringSecScroller col-100 floatLft clr relative">
+                <div class="offeringSecScrollerSub col-100 floatLft clr relative">
+                    <div class="offeringSec col-100 floatLft clr">
+                        <div class="main-wrapper">
+                            <div class="wtWeOffCont d-flex algnItmCent justContSpBtw gp-1 col-100 floatLft clr relative">
+                                <div class="wtWeOffContTxt">
+                                    <div class="wtWeOffContTxtSubHead margiBot1em"><h6>Home Automation Solutions</h6></div>
+                                    <div class="wtWeOffContTxtHead txt_gradient margiBot1em"><h4><span>Connected Living Designed Around your Life</span></h4></div>
+                                    <div class="Comm_Txt wtWeDoSecCardp margiBot2em"><p>Our home automation solutions bring comfort, control, and convenience into one intelligent system. Because the future of living is intuitive, we help you create homes that understand, respond, and evolve with you.</p></div>
+                                    <div class="commBtn"><a href="javascript:;">Learn More</a></div>
+                                </div>
+                                <div class="wtWeOffContImg"><img src="./assets/images/wtWeOff-Img.png" alt="What We Offer"></div>
+                            </div>
                         </div>
-                        <div class="wtWeOffContImg"><img src="./assets/images/wtWeOff-Img.png" alt="What We Offer"></div>
+                    </div>
+                    <div class="offeringSec col-100 floatLft clr">
+                        <div class="main-wrapper">
+                            <div class="wtWeOffCont d-flex algnItmCent justContSpBtw gp-1 col-100 floatLft clr relative">
+                                <div class="wtWeOffContTxt">
+                                    <div class="wtWeOffContTxtSubHead margiBot1em"><h6>Home Automation Solutions</h6></div>
+                                    <div class="wtWeOffContTxtHead txt_gradient margiBot1em"><h4><span>Connected Living Designed Around your Life</span></h4></div>
+                                    <div class="Comm_Txt wtWeDoSecCardp margiBot2em"><p>Our home automation solutions bring comfort, control, and convenience into one intelligent system. Because the future of living is intuitive, we help you create homes that understand, respond, and evolve with you.</p></div>
+                                    <div class="commBtn"><a href="javascript:;">Learn More</a></div>
+                                </div>
+                                <div class="wtWeOffContImg"><img src="./assets/images/wtWeOff-Img.png" alt="What We Offer"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
