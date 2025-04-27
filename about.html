@@ -10,13 +10,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
 
-    <link rel="stylesheet" href="./assets/css/init.css">
-    <link rel="stylesheet" href="./assets/js/slick-slider/slick-theme.css">
+    <link rel="stylesheet" href="./assets/js/aos/aos.css">
     <link rel="stylesheet" href="./assets/js/slick-slider/slick.css">
+    <link rel="stylesheet" href="./assets/css/init.css">
     <link rel="stylesheet" href="./assets/css/ps-style.css">
     <link rel="stylesheet" href="./assets/css/svg-style.css">
     <link rel="stylesheet" href="./assets/css/ps-device.css">
     <link rel="stylesheet" href="./assets/css/svg-device.css">
+    <style type="text/css">
+        #load{width:100vw;height:100vh;position:fixed;z-index:9999;background:url(./assets/images/sonic_loader.gif) no-repeat center center rgba(255,255,255,0.8);background-position:center;background-size:100% 100%;}
+    </style>
 
      <!-- GSAP -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -24,6 +27,7 @@
      <!-- ScrollTrigger Plugin -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
+<div id="load"></div>
 <body>
 
     <header>
@@ -58,8 +62,8 @@
             </video>
             <div class="main-wrapper">
                 <div class="bannerCont col-100 floatLft clr relative">
-                    <div class="bannerTitle txt_gradient"><h1>We<span>Connect<br></span> what Matters</h1></div>
-                    <div class="bannerTxt txt_gradient"><p>by Integrating Advanced, AI-powered Technologies to Make Infrastructure Smarter, Safer, and More Sustainable</p></div>
+                    <div class="bannerTitle txt_gradient" data-aos="fade-up" data-aos-duration="1000"><h1>We<span>Connect<br></span> what Matters</h1></div>
+                    <div class="bannerTxt txt_gradient" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"><p>by Integrating Advanced, AI-powered Technologies to Make Infrastructure Smarter, Safer, and More Sustainable</p></div>
                 </div>
             </div>
         </section>
@@ -68,13 +72,13 @@
         <section class="aboutTechLife col-100 sv-secGap floatLft relative clr">
             <div class="main-wrapper">
                 <div class="techLifeInfo col-100 floatLft relative clr">
-                    <div class="CommSecTitle txt_gradient"><h3>Where Tech <br> Meets <span>Life</span></h3></div>
+                    <div class="CommSecTitle txt_gradient" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"><h3>Where Tech <br> Meets <span>Life</span></h3></div>
                 </div>
             </div>
 
             <div class="techGalleWrapp col-100 floatLft relative clr">
                 <div class="grid-wrapper">
-                    <div class="tall relative">
+                    <div class="tall relative" data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="top-center">
                         <img src="./assets/images/masonaryGallbg.png" alt="" />
                         <div class="techGallInfo txt_gradient col-100 floatLft">
                             <img src="./assets/images/foundationlife.png" alt="" class="techLifeIcon">
@@ -86,7 +90,7 @@
                         </div>
                     </div>
 
-                    <div class="wide secDesign relative">
+                    <div class="wide secDesign relative" data-aos="fade-left" data-aos-duration="1000" data-aos-anchor-placement="top-center" data-aos-delay="100">
                         <div class="techGallInfo foundLife txt_gradient col-100 floatLft">
                             <img src="./assets/images/conectliving.png" alt="" class="techLifeIcon">
                             <h5 class="textUp"><span>Connected Living</span></h5>
@@ -97,7 +101,7 @@
                         </div>
                     </div>
 
-                    <div class="middle relative">
+                    <div class="middle relative" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">
                         <img src="./assets/images/masonaryGallbg.png" alt="" />
                         <div class="techGallInfo foundLife txt_gradient col-100 floatLft">
                             <img src="./assets/images/transformImpact.png" alt="" class="techLifeIcon">
@@ -109,7 +113,7 @@
                         </div>
                     </div>
 
-                    <div class="wide secDesign relative">
+                    <div class="wide secDesign relative" data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
                         <img src="./assets/images/masonaryGallbg.png" alt="" />
                         <div class="techGallInfo foundLife txt_gradient col-100 floatLft">
                             <img src="./assets/images/purposefullroot.png" alt="" class="techLifeIcon">
@@ -121,7 +125,7 @@
                         </div>
                     </div>
 
-                    <div class="tall relative">
+                    <div class="tall relative" data-aos="fade-left" data-aos-duration="1000" data-aos-anchor-placement="top-center" data-aos-delay="400">
                         <img src="./assets/images/masonaryGallbg.png" alt="">
                         <div class="techGallInfo txt_gradient col-100 floatLft">
                             <img src="./assets/images/humanCentered.png" alt="" class="techLifeIcon">
@@ -164,38 +168,38 @@
         <section class="ourValues col-100 sv-secGap floatLft relative clr">
             <div class="main-wrapper">
                 <div class="techLifeInfo col-100 floatLft relative clr">
-                    <div class="CommSecTitle ourValHead  txt_gradient"><h3 class="textLeft">Our <span>Values</span></h3></div>
+                    <div class="CommSecTitle ourValHead  txt_gradient" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"><h3 class="textLeft">Our <span>Values</span></h3></div>
                 </div>
 
                 <div class="ourValuesInfo d-flex justContSpBtw col-100 floatLft relative clr">
                     <div class="ourValueText tab-content active txt_gradient col-100 floatLft relative clr" id="tab-0">
-                        <h5 class="textUp"><span>Intuition</span></h5>
-                        <p>We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
+                        <h5 class="textUp" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000"><span>Intuition</span></h5>
+                        <p data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
                     </div>
                     <div class="ourValueText tab-content txt_gradient col-100 floatLft relative clr" id="tab-1">
-                        <h5 class="textUp"><span>RELIABILITY</span></h5>
-                        <p>We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
+                        <h5 class="textUp" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000"><span>RELIABILITY</span></h5>
+                        <p data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
                     </div>
                     <div class="ourValueText tab-content txt_gradient col-100 floatLft relative clr" id="tab-2">
-                        <h5 class="textUp"><span>CUSTOMER CENTRICITY</span></h5>
-                        <p>We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
+                        <h5 class="textUp" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000"><span>CUSTOMER CENTRICITY</span></h5>
+                        <p data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
                     </div>
                     <div class="ourValueText tab-content txt_gradient col-100 floatLft relative clr" id="tab-3">
-                        <h5 class="textUp"><span>INNOVATION</span></h5>
-                        <p>We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
+                        <h5 class="textUp" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000"><span>INNOVATION</span></h5>
+                        <p data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
                     </div>
                     <div class="ourValueText tab-content txt_gradient col-100 floatLft relative clr" id="tab-4">
-                        <h5 class="textUp"><span>AGILITY</span></h5>
-                        <p>We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
+                        <h5 class="textUp" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000"><span>AGILITY</span></h5>
+                        <p data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">We make the complex feel intuitive,  so systems are easier to manage and decisions easier to make.</p>
                     </div>
 
                     <div class="ourValueImg col-100 floatLft relative clr">
                         <div class="tabBtn-container">
-                            <div class="tabBtn active current" data-id="tab-0">INTUITION</div>
-                            <div class="tabBtn"  data-id="tab-1">RELIABILITY</div>
-                            <div class="tabBtn" data-id="tab-2">CUSTOMER CENTRICITY</div>
-                            <div class="tabBtn" data-id="tab-3">INNOVATION</div>
-                            <div class="tabBtn" data-id="tab-4">AGILITY</div>
+                            <div class="tabBtn active current" data-id="tab-0"data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">INTUITION</div>
+                            <div class="tabBtn"  data-id="tab-1"data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">RELIABILITY</div>
+                            <div class="tabBtn" data-id="tab-2"data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">CUSTOMER CENTRICITY</div>
+                            <div class="tabBtn" data-id="tab-3"data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">INNOVATION</div>
+                            <div class="tabBtn" data-id="tab-4"data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">AGILITY</div>
                         </div>                                                
                     </div>
                 </div>
@@ -209,10 +213,10 @@
         <!-- EHC section -->
         <section class="techEhcSec col-100 sv-secGap floatLft relative clr">
             <div class="main-wrapper">
-                <div class="techEhcSecImg col-100 floatLft relative clr"><img src="./assets/images/ehc_invesment.png" alt="EHC"></div>
+                <div class="techEhcSecImg col-100 floatLft relative clr" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"><img src="./assets/images/ehc_invesment.png" alt="EHC"></div>
                 <div class="ehcTextBtn txt_gradient textCenter col-100 floatLft relative clr">
-                    <h3><span>Sonic Tech is an EHC Subsidiary</span></h3>
-                    <div class="ehcBtn commBtn textCenter floatLft relative d-flex">
+                    <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100"><span>Sonic Tech is an EHC Subsidiary</span></h3>
+                    <div class="ehcBtn commBtn textCenter floatLft relative d-flex" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">
                         <a href="javascript:;" class="floatLft relative">Learn More</a>
                     </div>
                 </div>
@@ -283,44 +287,17 @@
     
 
     <script src="./assets/js/jQuery/jquery-3.6.min.js"></script>
+    <script src="./assets/js/aos/aos.js"></script>
     <script src="./assets/js/slick-slider/slick.min.js"></script>
     <script src="./assets/js/custom.js"></script>
-      <script>
-        gsap.registerPlugin(ScrollTrigger);
+    <script>
+        jQuery(window).on("load", function () {
+            setTimeout(function () {
+                //alert('page is loaded and 1 minute has passed');  
 
-        // Timeline for whole section
-        const tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".visionMission",
-            start: "center center",   // when the top of the section hits the center of the viewport
-            end: "+=2000",         // scroll distance
-            scrub: true,           // smooth scrubbing
-            pin: true,             // lock (pin) the section
-            anticipatePin: 1,
-        }
+                $('#load').hide();
+            }, 1000);
         });
-
-        // Animate the Rocket coming up
-        tl.from("#rocket img", {
-        y: 300,
-        opacity: 0,
-        duration: 1,
-        })
-
-        // Animate Left Text (Mission) after rocket
-        tl.from("#mission", {
-        y: 200,
-        opacity: 0,
-        duration: 1,
-        }, "+=0.5") // slight delay
-
-        // Animate Right Text (Vision) after Mission
-        tl.from("#vision", {
-        y: 200,
-        opacity: 0,
-        duration: 1,
-        }, "+=0.5");
-
-      </script>
+    </script>
 </body>
 </html>

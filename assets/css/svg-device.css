@@ -8,6 +8,8 @@
     header{top:1.5em;}
     button.slick-next.slick-arrow,button.slick-prev.slick-arrow{width:55px;height:55px;left: 42%;bottom: -100%;}
     .wtWeDoSecCardIcon,.wtWeDoSecCardIcon img{max-width:30px;}
+    .TmPartnersSecCard > img{max-width:150px;}
+    .techEhcSecImg > img{max-width:150px;}
 
 }
 @media only screen and (max-width: 1500px){
@@ -19,9 +21,11 @@
     :root{--banner-title:60px;--main-title:50px;--common-heading:32px;--Sub_Heading:24px;--body:20px;--body-sub:18px;--body-subTxt:16px;--smallestTxt:14px;--secGap:80px;}
     .wtWeDoSecCardIcon{max-width: 15px;}
     .brandLogo{max-width:104px;}
+    .TmPartnersSecCard > img{max-width:100px;}
+    .techEhcSecImg > img{max-width:120px;}
 }
 @media only screen and (max-width: 1280px){
-    .ourValueImg .tabBtn-container .tabBtn.current{width:175px;height:175px;}
+    .ourValueImg .tabBtn-container .tabBtn.active{width:175px;height:175px;}
     .ourValueImg .tabBtn{width: 95px;height: 95px;}
     .stackcardTxts{padding:3em;}
 
@@ -38,8 +42,9 @@
 @media only screen and (max-width: 1024px){
     .BannerSec{background-size:110% 100%;}
     .footerContent{flex-flow:row wrap;}
-    .footStDet{max-width:100%;margin-top: 1.5em;justify-content: space-between;}
+    .footStDet{max-width:100%;justify-content: space-between;}
     .ContactForm,.ContactFrmContTxt{width:45%;}
+    .main-wrapper{max-width:90%;}
 
 }
 @media only screen and (max-width: 950px){
@@ -54,8 +59,9 @@
     button.slick-next.slick-arrow{background-image: url(../images/nextBtn.png);transform: translateX(25px);}
     .innoActinSliderTxt{max-width:50%;}
     .enerSoluSec .enerSoluSecCard > .advDetSecSliderCont{max-width: 100%;}
-    .ourValueImg .tabBtn-container .tabBtn.current{width:150px;height:150px;font-size: 1rem;}
+    .ourValueImg .tabBtn-container .tabBtn.active{width:150px;height:150px;font-size: 1rem;}
     .ourValueImg .tabBtn{width: 75px;height: 75px;}
+    .footLogos{width: 100%;margin-bottom: 1em;}
 }
 @media only screen and (max-width: 800px){
     .stackcardTxts{padding:2em;}
@@ -64,7 +70,7 @@
 }
 @media only screen and (max-width: 768px){
     :root{--banner-title:50px;--main-title:40px;--common-heading:22px;--Sub_Heading:19px;--body:16px;--body-sub:15px;--body-subTxt:13px;--smallestTxt:12px;--secGap:50px;}
-    .TmPartnersSecCard > img{max-width:60px;}
+    .TmPartnersSecCard > img{max-width:80px;}
     .wtWeOffCont{flex-direction:column;gap: 2em;}
     .wtWeOffContTxt,.wtWeOffContImg{width: 100%;max-width: 100%;text-align: center;}
     .BannerSec{background-size:150% 100%;}
@@ -78,16 +84,19 @@
     .ham_menu{display: block;}
     .telFlagLab > img{max-width: 12px;}
     .telFlagLab.active > img{max-width:10px;}
-    .ourValueImg .tabBtn-container .tabBtn.current{width:120px;height:120px;}
+    .ourValueImg .tabBtn-container .tabBtn.active{width:120px;height:120px;}
     .ourValueImg .tabBtn{width: 60px;height: 60px;font-size: 0.4rem;}
+    .techEhcSecImg > img{max-width:90px;}
+    
 }
-@media only screen and (max-width: 600px){
-    :root{--banner-title:30px;--main-title:25px;--common-heading:20px;--Sub_Heading:18px;--body:15px;--body-sub:14px;--body-subTxt:12px;--smallestTxt:12px;--secGap:50px;}
+@media only screen and (max-width: 610px){
+    :root{--banner-title:33px;--main-title:30px;--common-heading:20px;--Sub_Heading:18px;--body:15px;--body-sub:14px;--body-subTxt:12px;--smallestTxt:12px;--secGap:50px;}
+    #load{background-size:200% 100%;}
     .footerContent{flex-flow:row wrap;}
     .footCtr,.footCtr2{width:50%;}
     .footLogos.footLft{width:100%;display:flex;align-items:center;margin-bottom:1em;justify-content:center;}
     .FtStLogo{margin-bottom: 1em;max-width: 100px;}
-    .FtCertLogo{max-width:60px;}
+    .FtCertLogo{max-width:45px;}
     .footStDet > *{width:calc(50% - 0em);}
     .bannerTitle > * br{display: none;}
     .wtWeDoSecCard{width: 100%;}
@@ -98,7 +107,7 @@
     .ContactFrmContTxt *{text-align:center;}
     .ContactFrmContTxt br{display: none;}
     .headerContent{padding:1em;}
-    .headerBtn{margin-right: 0.5em;}
+    .headerBtn{margin-right: 0.8em;}
     .ham_menu svg{max-width:30px;width:100%;height:auto;}
     .advDetSecSliderCont{flex-direction:column;}
     .techTabCard{width:calc(50% - 1em);}    
@@ -107,7 +116,7 @@
     .ourValuesInfo{flex-direction: column-reverse;}
     .ourValuesInfo > *{width: 100%;max-width: 100%;}
     .ourValueImg .tabBtn-container .tabBtn{width:20vw;height:20vw;font-size: 2vw;}
-    .ourValueImg .tabBtn-container .tabBtn.current{width:38vw;height:38vw;}
+    .ourValueImg .tabBtn-container .tabBtn.active{width:38vw;height:38vw;}
     .ourValueImg .tabBtn-container{aspect-ratio:1.5 / 1.3;}
     .ourValueImg .tabBtn-container .tabBtn:nth-child(2){top:0%;left:30%;}
     .ourValueImg .tabBtn-container .tabBtn:nth-child(3){top:30%;left:30%;}
@@ -115,6 +124,26 @@
     .ourValueImg .tabBtn-container .tabBtn:nth-child(5){top:55%;right:0%;}
     .stackcards{flex-direction: column;}
     .stackcards > *{max-width: 100%;}
+    .vmImg{max-width: 50%;}
+    .vmTxtRgt{margin-top:1.5em;}
+    .ourValueText p{font-size:14px;}
+    .floating-labelInp label.floating-label.active{font-size:calc(var(--body-sub) - 2px);}
+    .contactmsg,.errorMSg{font-size:10px;}
+    .stackcards:nth-child(2){transform: translateY(0%);}
+    .stackcards:nth-child(3){transform: translateY(0%);}
+    .stackcards:nth-child(4){transform: translateY(0%);}
+    .stackcards:nth-child(5){transform: translateY(0%);}
+    .stackcards:nth-child(6){transform: translateY(0%);}
+    .stackcards:nth-child(7){transform: translateY(0%);}
+    .stackcards:nth-child(8){transform: translateY(0%);}
+    .stackcards:nth-child(9){transform: translateY(0%);}
+    .stackcards{position: relative;margin-top: 2em;}
+    .footContact > *{margin-bottom:0.5em;}
+    .footContact2 .footIcon{margin:0em 0.6em 0 0;}
+    .footContact2{margin-top:0.4em;}
+
+
+
 }
 @media only screen and (max-width: 550px){}
 @media only screen and (max-width: 400px){

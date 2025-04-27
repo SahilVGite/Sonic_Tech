@@ -1,11 +1,3 @@
-/* about section */
-.aboutBanner{
-    background-image: url(../images/about_bann.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
 /* mason gallery */
 .aboutTechLife{
     background-image: url(../images/techlifebg.png);
@@ -65,7 +57,7 @@
 .ourValuesInfo{margin-top: 3.27em;}
 .ourValueText{max-width: 60%;}
 .ourValueText h5{font-size: 36px;}
-.ourValueText p{font-size: 44px;}
+.ourValueText p{font-size: 30px;}
 .ourValueImg{max-width: 35%;}
 
  

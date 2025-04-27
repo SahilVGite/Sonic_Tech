@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -10,23 +11,29 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
 
+    <link rel="stylesheet" href="./assets/js/aos/aos.css">
     <link rel="stylesheet" href="./assets/js/slick-slider/slick.css">
     <link rel="stylesheet" href="./assets/css/init.css">
+    <link rel="stylesheet" href="./assets/css/ps-style.css">
     <link rel="stylesheet" href="./assets/css/svg-style.css">
+    <link rel="stylesheet" href="./assets/css/ps-device.css">
     <link rel="stylesheet" href="./assets/css/svg-device.css">
+    <style type="text/css">
+        #load{width:100vw;height:100vh;position:fixed;z-index:9999;background:url(./assets/images/sonic_loader.gif) no-repeat center center rgba(255,255,255,0.8);background-position:center;background-size:100% 100%;}
+    </style>
 
-        <!-- GSAP -->
+    <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <!-- ScrollTrigger Plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
+<div id="load"></div>
 <body>
 
     <header>
         <div class="headerWrap">
             <div class="headerContent d-flex justContSpBtw algnItmCent col-100 floatLft clr relative">
-                <div class="brandLogo"><a href="./index.html"><img src="./assets/images/Site_Logo.png" alt="Logo"></a></div>
+                <div class="brandLogo"><a href="./index.html"><img src="./assets/images/Site_Logo.png" alt="Logo"></a>
+                </div>
                 <div class="headMenu">
                     <ul class="d-flex algnItmCent">
                         <span class="close_menu"></span>
@@ -54,33 +61,76 @@
             </video>
             <div class="main-wrapper">
                 <div class="bannerCont col-100 floatLft clr relative">
-                    <div class="bannerTitle txt_gradient"><h1><span>Connecting<br></span> what Matters</h1></div>
-                    <div class="bannerTitleSub txt_gradient"><p><span>Empowering</span> what’s next</p></div>
-                    <div class="bannerTxt txt_gradient"><p>We are a UAE-born technology integrator delivering intelligent, connected and AI-powered solutions that elevate tomorrow’s infrastructure.</p></div>
-                    <div class="commBtn"><a href="javaascript:;">Learn More</a></div>
+                    <div class="bannerTitle txt_gradient" data-aos="fade-up" data-aos-duration="1000">
+                        <h1><span>Connecting<br></span> what Matters</h1>
+                    </div>
+                    <div class="bannerTitleSub txt_gradient" data-aos="fade-up" data-aos-delay="100"
+                        data-aos-duration="1000">
+                        <p><span>Empowering</span> what’s next</p>
+                    </div>
+                    <div class="bannerTxt txt_gradient" data-aos="fade-up" data-aos-delay="200"
+                        data-aos-duration="1000">
+                        <p>We are a UAE-born technology integrator delivering intelligent, connected and AI-powered
+                            solutions that elevate tomorrow’s infrastructure.</p>
+                    </div>
+                    <div class="commBtn" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"><a
+                            href="javaascript:;">Learn More</a></div>
                 </div>
             </div>
         </section>
         <section class="wtWeDoSec d-flex algnItmCent sv-secGap col-100 floatLft clr relative">
             <div class="main-wrapper">
                 <div class="wtWeDoSecCont col-100 floatLft clr relative">
-                    <div class="CommSecTitle txt_gradient col-100 floatLft clr"><h3>What <span>We Do</span></h3></div>
+                    <div class="CommSecTitle txt_gradient col-100 floatLft clr" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <h3>What <span>We Do</span></h3>
+                    </div>
                     <div class="wtWeDoSecCards d-flex algnItmstretch flxFlwRwWrp col-100 floatLft clr">
-                        <div class="wtWeDoSecCard">
-                            <div class="wtWeDoSecCardTitle"><span class="wtWeDoSecCardIcon"><img src="./assets/images/control_system.png" alt="What We Do"></span><h5>Control systems</h5></div>
-                            <div class="Comm_Txt wtWeDoSecCardp"><p>We design intelligent control systems that monitor and respond to dynamic environments, from gas detection to remote monitoring and fire protection.</p></div>
+                        <div class="wtWeDoSecCard" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                            data-aos-delay="100" data-aos-duration="1000">
+                            <div class="wtWeDoSecCardTitle"><span class="wtWeDoSecCardIcon"><img
+                                        src="./assets/images/control_system.png" alt="What We Do"></span>
+                                <h5>Control systems</h5>
+                            </div>
+                            <div class="Comm_Txt wtWeDoSecCardp">
+                                <p>We design intelligent control systems that monitor and respond to dynamic
+                                    environments, from gas detection to remote monitoring and fire protection.</p>
+                            </div>
                         </div>
-                        <div class="wtWeDoSecCard">
-                            <div class="wtWeDoSecCardTitle"><span class="wtWeDoSecCardIcon"><img src="./assets/images/smart_integration.png" alt="What We Do"></span><h5>Smart integrations</h5></div>
-                            <div class="Comm_Txt wtWeDoSecCardp"><p>We integrate AI, IoT, and SCADA technologies into scalable platforms that improve visibility, safety, and performance across energy, utilities, and urban services.</p></div>
+                        <div class="wtWeDoSecCard" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                            data-aos-delay="200" data-aos-duration="1000">
+                            <div class="wtWeDoSecCardTitle"><span class="wtWeDoSecCardIcon"><img
+                                        src="./assets/images/smart_integration.png" alt="What We Do"></span>
+                                <h5>Smart integrations</h5>
+                            </div>
+                            <div class="Comm_Txt wtWeDoSecCardp">
+                                <p>We integrate AI, IoT, and SCADA technologies into scalable platforms that improve
+                                    visibility, safety, and performance across energy, utilities, and urban services.
+                                </p>
+                            </div>
                         </div>
-                        <div class="wtWeDoSecCard">
-                            <div class="wtWeDoSecCardTitle"><span class="wtWeDoSecCardIcon"><img src="./assets/images/adaptive_tech.png" alt="What We Do"></span><h5>adaptive technology</h5></div>
-                            <div class="Comm_Txt wtWeDoSecCardp"><p>We embed adaptive technology that ensures reliability and resilience, even in the most demanding industrial and energy-intensive settings.</p></div>
+                        <div class="wtWeDoSecCard" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                            data-aos-delay="300" data-aos-duration="1000">
+                            <div class="wtWeDoSecCardTitle"><span class="wtWeDoSecCardIcon"><img
+                                        src="./assets/images/adaptive_tech.png" alt="What We Do"></span>
+                                <h5>adaptive technology</h5>
+                            </div>
+                            <div class="Comm_Txt wtWeDoSecCardp">
+                                <p>We embed adaptive technology that ensures reliability and resilience, even in the
+                                    most demanding industrial and energy-intensive settings.</p>
+                            </div>
                         </div>
-                        <div class="wtWeDoSecCard">
-                            <div class="wtWeDoSecCardTitle"><span class="wtWeDoSecCardIcon"><img src="./assets/images/homeauto.png" alt="What We Do"></span><h5>smart Home automation</h5></div>
-                            <div class="Comm_Txt wtWeDoSecCardp"><p>We transform everyday living through seamless smart home automation—integrating intelligent control, comfort, security, and energy efficiency into one connected ecosystem.</p></div>
+                        <div class="wtWeDoSecCard" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                            data-aos-delay="400" data-aos-duration="1000">
+                            <div class="wtWeDoSecCardTitle"><span class="wtWeDoSecCardIcon"><img
+                                        src="./assets/images/homeauto.png" alt="What We Do"></span>
+                                <h5>smart Home automation</h5>
+                            </div>
+                            <div class="Comm_Txt wtWeDoSecCardp">
+                                <p>We transform everyday living through seamless smart home automation—integrating
+                                    intelligent control, comfort, security, and energy efficiency into one connected
+                                    ecosystem.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -89,60 +139,108 @@
         <section class="wtWeOffSec d-flex algnItmCent justContCent flexdircol sv-secGap col-100 floatLft clr relative">
             <div class="main-wrapper">
                 <div class="wtWeOffSecCont margiBot4em col-100 floatLft clr relative">
-                    <div class="CommSecTitle txt_gradient col-100 floatLft clr"><h3>What <span>We Offer?</span></h3></div>
+                    <div class="CommSecTitle txt_gradient col-100 floatLft clr" data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+                        <h3>What <span>We Offer?</span></h3>
+                    </div>
                 </div>
             </div>
             <div class="offeringSecScroller col-100 floatLft clr relative">
                 <div class="offeringSecScrollerSub col-100 floatLft clr relative">
                     <div class="offeringSec col-100 floatLft clr">
                         <div class="main-wrapper">
-                            <div class="wtWeOffCont d-flex algnItmCent justContSpBtw gp-1 col-100 floatLft clr relative">
+                            <div
+                                class="wtWeOffCont d-flex algnItmCent justContSpBtw gp-1 col-100 floatLft clr relative">
                                 <div class="wtWeOffContTxt">
-                                    <div class="wtWeOffContTxtSubHead margiBot1em"><h6>smart Home Automation Solutions</h6></div>
-                                    <div class="wtWeOffContTxtHead txt_gradient margiBot1em"><h4><span>Connected Living Designed Around your Life</span></h4></div>
-                                    <div class="Comm_Txt wtWeDoSecCardp margiBot2em"><p>Our smart home automation solutions bring comfort, control, and convenience into one intelligent system. Because the future of living is intuitive, we help you create homes that understand, respond, and evolve with you.</p></div>
+                                    <div class="wtWeOffContTxtSubHead margiBot1em">
+                                        <h6>smart Home Automation Solutions</h6>
+                                    </div>
+                                    <div class="wtWeOffContTxtHead txt_gradient margiBot1em">
+                                        <h4><span>Connected Living Designed Around your Life</span></h4>
+                                    </div>
+                                    <div class="Comm_Txt wtWeDoSecCardp margiBot2em">
+                                        <p>Our smart home automation solutions bring comfort, control, and convenience
+                                            into one intelligent system. Because the future of living is intuitive, we
+                                            help you create homes that understand, respond, and evolve with you.</p>
+                                    </div>
                                     <div class="commBtn"><a href="javascript:;">Learn More</a></div>
                                 </div>
-                                <div class="wtWeOffContImg"><img src="./assets/images/offer1.png" alt="What We Offer"></div>
+                                <div class="wtWeOffContImg"><img src="./assets/images/offer1.png" alt="What We Offer">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="offeringSec col-100 floatLft clr">
                         <div class="main-wrapper">
-                            <div class="wtWeOffCont d-flex algnItmCent justContSpBtw gp-1 col-100 floatLft clr relative">
+                            <div
+                                class="wtWeOffCont d-flex algnItmCent justContSpBtw gp-1 col-100 floatLft clr relative">
                                 <div class="wtWeOffContTxt">
-                                    <div class="wtWeOffContTxtSubHead margiBot1em"><h6>advanced detection systems</h6></div>
-                                    <div class="wtWeOffContTxtHead txt_gradient margiBot1em"><h4><span>Connecting signals that empower safer decisions</span></h4></div>
-                                    <div class="Comm_Txt wtWeDoSecCardp margiBot2em"><p>Our detection systems don’t just detect threats, they decode patterns, predict risks, and respond in real-time. From public spaces to critical infrastructure, we help safeguard what matters most, because awareness is the first step to protection.</p></div>
+                                    <div class="wtWeOffContTxtSubHead margiBot1em">
+                                        <h6>advanced detection systems</h6>
+                                    </div>
+                                    <div class="wtWeOffContTxtHead txt_gradient margiBot1em">
+                                        <h4><span>Connecting signals that empower safer decisions</span></h4>
+                                    </div>
+                                    <div class="Comm_Txt wtWeDoSecCardp margiBot2em">
+                                        <p>Our detection systems don’t just detect threats, they decode patterns,
+                                            predict risks, and respond in real-time. From public spaces to critical
+                                            infrastructure, we help safeguard what matters most, because awareness is
+                                            the first step to protection.</p>
+                                    </div>
                                     <div class="commBtn"><a href="javascript:;">Learn More</a></div>
                                 </div>
-                                <div class="wtWeOffContImg"><img src="./assets/images/offer2.png" alt="What We Offer"></div>
+                                <div class="wtWeOffContImg"><img src="./assets/images/offer2.png" alt="What We Offer">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="offeringSec col-100 floatLft clr">
                         <div class="main-wrapper">
-                            <div class="wtWeOffCont d-flex algnItmCent justContSpBtw gp-1 col-100 floatLft clr relative">
+                            <div
+                                class="wtWeOffCont d-flex algnItmCent justContSpBtw gp-1 col-100 floatLft clr relative">
                                 <div class="wtWeOffContTxt">
-                                    <div class="wtWeOffContTxtSubHead margiBot1em"><h6>energy Management Solutions</h6></div>
-                                    <div class="wtWeOffContTxtHead txt_gradient margiBot1em"><h4><span>Connecting energy systems to power cleaner futures</span></h4></div>
-                                    <div class="Comm_Txt wtWeDoSecCardp margiBot2em"><p>Our energy management solutions turn complex energy flows into intelligent systems that help cities run cleaner and smarter. We power sustainable progress by enabling communities to manage energy wisely and move toward a greener future.</p></div>
+                                    <div class="wtWeOffContTxtSubHead margiBot1em">
+                                        <h6>energy Management Solutions</h6>
+                                    </div>
+                                    <div class="wtWeOffContTxtHead txt_gradient margiBot1em">
+                                        <h4><span>Connecting energy systems to power cleaner futures</span></h4>
+                                    </div>
+                                    <div class="Comm_Txt wtWeDoSecCardp margiBot2em">
+                                        <p>Our energy management solutions turn complex energy flows into intelligent
+                                            systems that help cities run cleaner and smarter. We power sustainable
+                                            progress by enabling communities to manage energy wisely and move toward a
+                                            greener future.</p>
+                                    </div>
                                     <div class="commBtn"><a href="javascript:;">Learn More</a></div>
                                 </div>
-                                <div class="wtWeOffContImg"><img src="./assets/images/offer3.png" alt="What We Offer"></div>
+                                <div class="wtWeOffContImg"><img src="./assets/images/offer3.png" alt="What We Offer">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="offeringSec col-100 floatLft clr">
                         <div class="main-wrapper">
-                            <div class="wtWeOffCont d-flex algnItmCent justContSpBtw gp-1 col-100 floatLft clr relative">
+                            <div
+                                class="wtWeOffCont d-flex algnItmCent justContSpBtw gp-1 col-100 floatLft clr relative">
                                 <div class="wtWeOffContTxt">
-                                    <div class="wtWeOffContTxtSubHead margiBot1em"><h6>industrial Solutions</h6></div>
-                                    <div class="wtWeOffContTxtHead txt_gradient margiBot1em"><h4><span>Connecting industrial systems to unlock smarter performance</span></h4></div>
-                                    <div class="Comm_Txt wtWeDoSecCardp margiBot2em"><p>Our industrial solutions connect systems, data, and operations into one intelligent ecosystem, enabling smarter production, predictive maintenance, and scalable performance.  From SCADA platforms to AI-powered, IoT-connected machinery, we help facilities monitor, automate, and optimize complex operations with precision, safety, and control.</p></div>
+                                    <div class="wtWeOffContTxtSubHead margiBot1em">
+                                        <h6>industrial Solutions</h6>
+                                    </div>
+                                    <div class="wtWeOffContTxtHead txt_gradient margiBot1em">
+                                        <h4><span>Connecting industrial systems to unlock smarter performance</span>
+                                        </h4>
+                                    </div>
+                                    <div class="Comm_Txt wtWeDoSecCardp margiBot2em">
+                                        <p>Our industrial solutions connect systems, data, and operations into one
+                                            intelligent ecosystem, enabling smarter production, predictive maintenance,
+                                            and scalable performance.  From SCADA platforms to AI-powered, IoT-connected
+                                            machinery, we help facilities monitor, automate, and optimize complex
+                                            operations with precision, safety, and control.</p>
+                                    </div>
                                     <div class="commBtn"><a href="javascript:;">Learn More</a></div>
                                 </div>
-                                <div class="wtWeOffContImg"><img src="./assets/images/offer4.png" alt="What We Offer"></div>
+                                <div class="wtWeOffContImg"><img src="./assets/images/offer4.png" alt="What We Offer">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -151,17 +249,36 @@
         </section>
         <section class="innoActSec d-flex algnItmCent justContCent flexdircol sv-secGap col-100 floatLft clr relative">
             <div class="main-wrapper">
-                <div class="CommSecTitle txt_gradient margiBot1em col-100 floatLft clr"><h3><span>Innovation</span> in Action<br></h3></div>
-                <div class="Comm_Txt innovActiv_p margiBot2em textCenter col-100 floatLft clr"><p>Rooted in the Middle East, we tackle the toughest energy challenges head-on. At Sonic Technologies, innovation is at the heart of what we do allowing us to deliver smarter solutions and power operational excellence across every project. Here’s a look at the partners who trust us and the work we’ve delivered.</p></div>
-                <div class="innoActinSliderSec d-flex algnItmCent justContCent gp-2 flxFlwRwWrp col-100 floatLft clr">
+                <div class="CommSecTitle txt_gradient margiBot1em col-100 floatLft clr" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+                    <h3><span>Innovation</span> in Action<br></h3>
+                </div>
+                <div class="Comm_Txt innovActiv_p margiBot2em textCenter col-100 floatLft clr" data-aos="fade-up"
+                    data-aos-delay="200" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+                    <p>Rooted in the Middle East, we tackle the toughest energy challenges head-on. At Sonic
+                        Technologies, innovation is at the heart of what we do allowing us to deliver smarter solutions
+                        and power operational excellence across every project. Here’s a look at the partners who trust
+                        us and the work we’ve delivered.</p>
+                </div>
+                <div class="innoActinSliderSec d-flex algnItmCent justContCent gp-2 flxFlwRwWrp col-100 floatLft clr"
+                    data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="center-bottom"
+                    data-aos-duration="1000">
                     <div class="innoActinSliderTxt">
                         <div class="innoActinSliderTxtCont">
-                            <div class="innoActinSliderTxtHead"><h5>Yas Island <br>Rotana Hotel</h5></div>
-                            <div class="innoActinSliderTxt_p"><h6>Abu Dhabi</h6></div>
+                            <div class="innoActinSliderTxtHead">
+                                <h5>Yas Island <br>Rotana Hotel</h5>
+                            </div>
+                            <div class="innoActinSliderTxt_p">
+                                <h6>Abu Dhabi</h6>
+                            </div>
                         </div>
                         <div class="innoActinSliderTxtCont textCenter">
-                            <div class="innoActinSliderTxtHead textCenter"><h5>Yas Island Rotana Hotel</h5></div>
-                            <div class="innoActinSliderTxt_p textCenter"><h6>Nashik</h6></div>
+                            <div class="innoActinSliderTxtHead textCenter">
+                                <h5>Yas Island Rotana Hotel</h5>
+                            </div>
+                            <div class="innoActinSliderTxt_p textCenter">
+                                <h6>Nashik</h6>
+                            </div>
                         </div>
                     </div>
                     <div class="innoActinSliderImg">
@@ -169,13 +286,20 @@
                         <img src="./assets/images/innov1.png" alt="Sonic Tech">
                     </div>
                 </div>
-                <div class="commBtn d-flex algnItmCent justContCent col-100 floatLft clr"><a href="javascript:;">Explore Portfolio</a></div>
+                <div class="commBtn d-flex algnItmCent justContCent col-100 floatLft clr" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"><a href="javascript:;">Explore
+                        Portfolio</a></div>
             </div>
         </section>
-        <section class="TmPartnersSec d-flex algnItmCent justContCent flexdircol sv-secGap col-100 floatLft clr relative">
+        <section
+            class="TmPartnersSec d-flex algnItmCent justContCent flexdircol sv-secGap col-100 floatLft clr relative">
             <div class="main-wrapper">
-                <div class="CommSecTitle txt_gradient col-100 floatLft clr"><h3>We Call Them <br><span>Partners</span></h3></div>
-                <div class="TmPartnersSecCards col-100 floatLft clr">
+                <div class="CommSecTitle txt_gradient col-100 floatLft clr" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                    <h3>We Call Them <br><span>Partners</span></h3>
+                </div>
+                <div class="TmPartnersSecCards col-100 floatLft clr" data-aos="fade-up" data-aos-delay="300"
+                    data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
                     <div class="TmPartnersSecCard"><img src="./assets/images/part-1.png" alt="Out Partner"></div>
                     <div class="TmPartnersSecCard"><img src="./assets/images/part-2.png" alt="Out Partner"></div>
                     <div class="TmPartnersSecCard"><img src="./assets/images/part-3.png" alt="Out Partner"></div>
@@ -191,12 +315,19 @@
         </section>
         <section class="ContactFrm d-flex algnItmCent sv-secGap col-100 floatLft clr relative" id="contactSec">
             <div class="main-wrapper">
-                <div class="ContactFrmCont d-flex algnItmCent justContSpBtw flxFlwRwWrp gp-1 col-100 floatLft clr relative">
+                <div
+                    class="ContactFrmCont d-flex algnItmCent justContSpBtw flxFlwRwWrp gp-1 col-100 floatLft clr relative">
                     <div class="ContactFrmContTxt">
-                        <div class="CommSecTitle txt_gradient margiBot1em"><h3><span>contact</span><br> us</h3></div>
-                        <div class="Comm_Txt"><p>Connect with us today to explore how we can innovate and grow together</p></div>
+                        <div class="CommSecTitle txt_gradient margiBot1em" data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+                            <h3><span>contact</span><br> us</h3>
+                        </div>
+                        <div class="Comm_Txt" data-aos-delay="300" data-aos-duration="1000">
+                            <p>Connect with us today to explore how we can innovate and grow together</p>
+                        </div>
                     </div>
-                    <div class="ContactForm">
+                    <div class="ContactForm" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                        data-aos-duration="1000">
                         <form action="#">
                             <div class="ContactFormCont">
                                 <ul>
@@ -214,7 +345,9 @@
                                     </li>
                                     <li>
                                         <div class="floating-labelInp ContactFormFld relative">
-                                            <label for="" class="floating-label telFlagLab d-flex"><img src="./assets/images/UAE_tel.png" alt="Tel." class="telFlag">+971</label>
+                                            <label for="" class="floating-label telFlagLab d-flex"><img
+                                                    src="./assets/images/UAE_tel.png" alt="Tel."
+                                                    class="telFlag">+971</label>
                                             <input type="text">
                                         </div>
                                     </li>
@@ -241,11 +374,14 @@
         <div class="main-wrapper">
             <div class="footerContent d-flex justContSpBtw sv-secGap col-100 floatLft clr relative">
                 <div class="footLogos footLft">
-                    <div class="FtStLogo"><a href="./index.html"><img src="./assets/images/Site_Logo.png" alt="Site Logo"></a></div>
+                    <div class="FtStLogo"><a href="./index.html"><img src="./assets/images/Site_Logo.png"
+                                alt="Site Logo"></a></div>
                     <div class="FtCertLogo"><img src="./assets/images/footCertLogo.png" alt="Certification"></div>
                 </div>
                 <div class="footCtr">
-                    <div class="footTitle"><h6>Quick Links</h6></div>
+                    <div class="footTitle">
+                        <h6>Quick Links</h6>
+                    </div>
                     <div class="footLinks">
                         <ul>
                             <li><a href="./about.html">about us</a></li>
@@ -254,11 +390,13 @@
                     </div>
                 </div>
                 <div class="footCtr2">
-                    <div class="footTitle"><h6>International Systems Integation</h6></div>
+                    <div class="footTitle">
+                        <h6>International Systems Integation</h6>
+                    </div>
                     <div class="footMail d-flex">
                         <div class="footIcon"><img src="./assets/images/foot_location_pin.png" alt="Location"></div>
                         <div class="footContactLinks">
-                            <p>JT030111, Service Block, Al Jazirah Al Hamra, Rakez, Ras Al Khaimah, UAE</p> 
+                            <p>JT030111, Service Block, Al Jazirah Al Hamra, Rakez, Ras Al Khaimah, UAE</p>
                         </div>
                     </div>
                 </div>
@@ -274,7 +412,7 @@
                         <div class="footMail d-flex">
                             <div class="footIcon"><img src="./assets/images/foot_phone.png" alt="Phone Number"></div>
                             <div class="footContactLinks">
-                                <div><a href="tel:+971 509119682">UAE: +971 509119682</a></div> 
+                                <div><a href="tel:+971 509119682">UAE: +971 509119682</a></div>
                                 <div><a href="tel:+202 01223109448">Egypt: +202 01223109448</a></div>
                             </div>
                         </div>
@@ -283,24 +421,40 @@
                         <div class="footMail d-flex">
                             <div class="footIcon"><img src="./assets/images/foot_location_pin.png" alt="Location"></div>
                             <div class="footContactLinks">
-                                <p>JT030111, Service Block, Al Jazirah Al Hamra, Rakez, Ras Al Khaimah, UAE</p> 
+                                <p>JT030111, Service Block, Al Jazirah Al Hamra, Rakez, Ras Al Khaimah, UAE</p>
                             </div>
                         </div>
                         <div class="footMap d-flex">
                             <div class="footIcon col-100"></div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119981.26817576951!2d73.72107976279183!3d19.991105338591492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddd290b09914b3%3A0xcb07845d9d28215c!2sNashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1745489929630!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119981.26817576951!2d73.72107976279183!3d19.991105338591492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddd290b09914b3%3A0xcb07845d9d28215c!2sNashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1745489929630!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footCopy col-100 floatLft clr">
-            <div class="footCopy_p textCenter col-100 floatLft clr"><p>Copyright ; 2020. Sonic Technologies. All Rights Reserved.</p></div>
+            <div class="footCopy_p textCenter col-100 floatLft clr">
+                <p>Copyright ; 2020. Sonic Technologies. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
-    
+
     <script src="./assets/js/jQuery/jquery-3.6.min.js"></script>
+    <script src="./assets/js/aos/aos.js"></script>
     <script src="./assets/js/slick-slider/slick.min.js"></script>
     <script src="./assets/js/custom.js"></script>
+    <script>
+        jQuery(window).on("load", function () {
+            setTimeout(function () {
+                //alert('page is loaded and 1 minute has passed');  
+
+                $('#load').hide();
+            }, 1000);
+        });
+    </script>
 </body>
+
 </html>

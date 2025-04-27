@@ -10,10 +10,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
 
+    <link rel="stylesheet" href="./assets/js/aos/aos.css">
     <link rel="stylesheet" href="./assets/js/slick-slider/slick.css">
     <link rel="stylesheet" href="./assets/css/init.css">
+    <link rel="stylesheet" href="./assets/css/ps-style.css">
     <link rel="stylesheet" href="./assets/css/svg-style.css">
+    <link rel="stylesheet" href="./assets/css/ps-device.css">
     <link rel="stylesheet" href="./assets/css/svg-device.css">
+    <style type="text/css">
+        #load{width:100vw;height:100vh;position:fixed;z-index:9999;background:url(./assets/images/sonic_loader.gif) no-repeat center center rgba(255,255,255,0.8);background-position:center;background-size:100% 100%;}
+    </style>
 
      <!-- GSAP -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -21,6 +27,7 @@
      <!-- ScrollTrigger Plugin -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
+<div id="load"></div>
 <body>
 
     <header>
@@ -54,14 +61,14 @@
             </video>
             <div class="main-wrapper">
                 <div class="bannerCont col-100 floatLft clr relative">
-                    <div class="bannerTitle txt_gradient textCenter"><h1>Innovative <br><span>Solutions</span> for <br>Modern Challenges</h1></div>
-                    <div class="bannerTxt txt_gradient textCenter"><p>Explore our range of advanced detection systems and smart solutions designed to enhance safety and efficiency.​</p></div>
+                    <div class="bannerTitle txt_gradient textCenter" data-aos="fade-up" data-aos-duration="1000"><h1>Innovative <br><span>Solutions</span> for <br>Modern Challenges</h1></div>
+                    <div class="bannerTxt txt_gradient textCenter" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><p>Explore our range of advanced detection systems and smart solutions designed to enhance safety and efficiency.​</p></div>
                 </div>
             </div>
         </section>
         <section class="scrollSlider d-flex algnItmCent gp-2 sv-secGap col-100 floatLft clr relative">
             <div class="main-wrapper">
-                <div class="CommSecTitle txt_gradient col-100 floatLft clr"><h3>What <span>We Offer?</span></h3></div>
+                <div class="CommSecTitle txt_gradient col-100 floatLft clr" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000"><h3>What <span>We Offer?</span></h3></div>
                 <div class="card-stack-section col-100 floatLft clr relative">
                     <div class="card-stack col-100 floatLft clr relative">
                         <div class="stackcards d-flex algnItmCent justContSpBtw flxFlwRwWrp col-100 floatLft clr">
@@ -203,14 +210,14 @@
         </section> -->
         <section class="solPgTabSec sv-secGap col-100 floatLft clr relative">
             <div class="main-wrapper">
-                <div class="bannerTitle txt_gradient col-100 floatLft clr relative textCenter"><h2>where <span>technology</span><br>Meets real life</h2></div>   
-                <div class="solPgTabbing col-100 floatLft clr relative">
+                <div class="bannerTitle txt_gradient col-100 floatLft clr relative textCenter" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom"><h2>where <span>technology</span><br>Meets real life</h2></div>   
+                <div class="solPgTabbing col-100 floatLft clr relative" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">
                     <ul class="tabBtns d-flex justContCent algnItmCent gp-2">
                         <li data-id="tab-0" class="active tabBtn">Dubai</li>
                         <li data-id="tab-1" class="tabBtn">Abu Dhabi</li>
                     </ul>
                 </div>
-                <div class="tab-content active  col-100 floatLft clr relative" id="tab-0">
+                <div class="tab-content active  col-100 floatLft clr relative" id="tab-0" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="300" data-aos-duration="1000">
                     <div class="techTabCards d-flex flxFlwRwWrp col-100 floatLft clr">
                         <div class="techTabCard">
                             <div class="techTabCardImg"><img src="./assets/images/dubai-1.png" alt="Dubai"></div>
@@ -234,7 +241,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-content col-100 floatLft clr relative" id="tab-1">
+                <div class="tab-content col-100 floatLft clr relative" id="tab-1" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="100">
                     <div class="techTabCards d-flex flxFlwRwWrp col-100 floatLft clr">
                         <div class="techTabCard">
                             <div class="techTabCardImg"><img src="./assets/images/dubai-1.png" alt="Dubai"></div>
@@ -316,47 +323,16 @@
     </footer>
     
     <script src="./assets/js/jQuery/jquery-3.6.min.js"></script>
+    <script src="./assets/js/aos/aos.js"></script>
     <script src="./assets/js/slick-slider/slick.min.js"></script>
     <script src="./assets/js/custom.js"></script>
-
     <script>
-        gsap.registerPlugin(ScrollTrigger);
+        jQuery(window).on("load", function () {
+            setTimeout(function () {
+                //alert('page is loaded and 1 minute has passed');  
 
-        const cards = gsap.utils.toArray(".stackcards");
-
-        let tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".card-stack-section",
-            start: "center center",
-            end: "+=" + (cards.length * window.innerHeight),
-            scrub: true,
-            pin: true,
-        }
-        });
-
-        // Set initial z-index and scale for each card
-        cards.forEach((card, i) => {
-        gsap.set(card, {
-            scale: 1 - (i * 0.05),
-            zIndex: cards.length - i
-        });
-        });
-
-        // Animate the stack
-        cards.forEach((card, i) => {
-        if (i === cards.length - 1) return;
-
-        let next = cards[i + 1];
-
-        tl.to(card, {
-            yPercent: -200,
-            scale: 1 - ((i + 1) * 0.05),
-            ease: "power1.inOut"
-        }, "+=0.3")
-        .to(next, {
-            scale: 1 - (i * 0.05),
-            ease: "power1.inOut"
-        }, "<");
+                $('#load').hide();
+            }, 1000);
         });
     </script>
 </body>

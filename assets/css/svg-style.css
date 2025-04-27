@@ -17,7 +17,6 @@ body.menu-open{overflow: hidden;}
 /* Section With Min-height 100vh */
 .wtWeOffSec,.BannerSec,.wtWeDoSec,.innoActSec,.scrollSlider{min-height: 100vh;}
 .BannerSec{background-position: center;background-repeat: no-repeat;background-size: cover;}
-.hmBanner{background-image: url(../images/banner_Img.png);}
 .hmBanner .bannerCont{max-width: 70%;}
 .bannerCont > .commBtn{margin-top: 3em;}
 
@@ -28,7 +27,7 @@ body.menu-open{overflow: hidden;}
 .wtWeDoSecCardTitle > *{font-size: var(--Sub_Heading);color: var(--Quaternary-color);font-weight: var(--fw-regular);font-family: var(--secondary-font);text-transform: uppercase;margin-block: 1em;}
 
 .wtWeDoSecCardIcon,.wtWeDoSecCardIcon img{max-width:44px;}
-.wtWeDoSecCards{gap: 1.5em;margin-top: 4.0625em;}
+.wtWeDoSecCards{gap: 1.5em;margin-top: var(--secGap);}
 .wtWeDoSecCard{width: calc(50% - 1em);background: rgba(255, 255, 255, 0.05);border: 1px solid rgba(213, 215, 216, 0.3);box-shadow: 0px 4px 24.2px 1px rgba(255, 255, 255, 0.2);border-radius: 20px;padding: 3.125em 2.1875em;}
 .wtWeDoSecCard > .Comm_Txt > p{line-height: 1.2719;}
 .offeringSec{background-image: url(../images/wtWeOff-Dots.png);background-position: center;background-repeat: no-repeat;background-size: cover;padding: 4.0625em;}
@@ -38,7 +37,7 @@ body.menu-open{overflow: hidden;}
 .wtWeOffContTxt{max-width: 40%;}
 .TmPartnersSec{background-image: url(../images/ourpartners-bg.png);background-position: center;background-size: 100% 100%;background-repeat: no-repeat;}
 .TmPartnersSecCard{width: calc(20% - 1em);}
-.TmPartnersSecCard > img{max-width: 100px;margin: auto;}
+.TmPartnersSecCard > img{max-width: 200px;margin: auto;}
 .TmPartnersSecCard:not(:last-child){border-right: 1px solid rgba(213, 215, 216, 0.3);}
 .TmPartnersSecCards{margin-top: 5em;}
 
@@ -57,6 +56,7 @@ body.menu-open{overflow: hidden;}
 
 .ContactFormFld input{width: 100%;background-color: transparent;padding: 1.5em 0 0.4em 0;border: none;border-bottom: 0.8px solid rgba(213, 215, 216, 0.15);outline: none;font-size: var(--body-sub);color: var(--txt-primary-color);font-weight: var(--fw-regular);}
 .ContactForm,.ContactFrmContTxt{width: 40%;}
+.ContactFormCont > ul > li{position: relative;}
 .ContactFormCont > ul > li:not(:last-child){margin-bottom: 1em;}
 .ContactFormCont > ul > li:last-child{margin-top: 2em;}
 .ContactFrm .main-wrapper{max-width: 1300px;width: 90%;}
@@ -65,6 +65,11 @@ body.menu-open{overflow: hidden;}
 .telFlagLab{align-items: baseline;gap: 0.4em;}
 .telFlagLab > img{max-width: 16px;}
 .telFlagLab.active > img{max-width:12px;}
+.ContactFormCont .commBtn > *{padding: 0.6em 1.3em;}
+
+.contactmsg,.errorMSg{font-size: 12px;position: absolute;top: 100%;left: 0;}
+.errorMSg{color: red;}
+.contactmsg{color: springgreen;}
 
 
 
@@ -79,16 +84,18 @@ button.slick-next.slick-arrow{background-image: url(../images/nextBtn.png);trans
 .FtCertLogo{max-width: 80px;margin: auto;}
 .footIcon{max-width: 15px;margin: 0.4em 0.6em 0 0;}
 .footMap iframe{width: 100%;height: auto;border-radius: 8px;aspect-ratio: 1.80/1;}
-.footStDet{max-width: 33.333%;}
+.footStDet{max-width: 40%;}
 .footCtr2{width: 20%;}
 .footStDet > *{width: calc(50% - 1em);}
 .footContact > *{margin-bottom: 1.5em;}
 .footCopy{padding: 1em;border-top: 1px solid rgba(213, 215, 216, 0.3);}
+.footerContent .footContactLinks h6{margin-bottom: 0.6em;}
+.footerContent.sv-secGap{padding:calc(var(--secGap) / 2) 0;}
+
 
 
 /* Solution Page */
-.solutionsBanner{background-image: url(../images/solutionsBanner-bg.png);}
-.solutionsBanner-2{background-image: url(../images/solutionsBanner-bg2.png);}
+
 .advDetSec{background-image: url(../images/innovAction-bg.png);background-position: center;background-repeat: no-repeat;background-size: 100% 100%;}
 .advDetSec .bannerTxt{max-width: 958px;}
 .advDetSecSliderSec{max-width: 95%;margin-left: auto;}
@@ -136,8 +143,8 @@ button.slick-next.slick-arrow{background-image: url(../images/nextBtn.png);trans
 .stackcardTitleSub > *{font-size: var(--Sub_Heading);font-weight: var(--fw-semi-bold);}
 .stackcardTxt > *{font-size: var(--body);font-weight: var(--fw-regular);}
 .stackcardTitle > *{font-size: var(--common-heading);font-weight: var(--fw-semi-bold);}
-.stackcardTitleSub > *{font-size: var(--Sub_Heading);font-weight: var(--fw-semi-bold);}
-.stackcardTxt > *{font-size: var(--body);font-weight: var(--fw-regular);}
+.stackcardTitleSub > *{font-size: var(--Sub_Heading);font-weight: var(--fw-semi-bold);margin-bottom: 0.2em;}
+.stackcardTxt > *{font-size: var(--body-subTxt);font-weight: var(--fw-regular);}
 
 /* About Page */
 .ourValueImg .tabBtn-container{position:relative;width:100%;height:100%;aspect-ratio:0.98/1;margin:auto;}
@@ -149,7 +156,7 @@ button.slick-next.slick-arrow{background-image: url(../images/nextBtn.png);trans
 .ourValueImg .tabBtn-container .tabBtn:nth-child(3){top:25%;left:32%;}
 .ourValueImg .tabBtn-container .tabBtn:nth-child(4){top:44%;left:50%;}
 .ourValueImg .tabBtn-container .tabBtn:nth-child(5){top:45%;right:0%;}
-.ourValueImg .tabBtn-container .tabBtn.current{width:250px;height:250px;font-size:1.3rem;z-index:3;}
+.ourValueImg .tabBtn-container .tabBtn.active{width:250px;height:250px;font-size:1.3rem;z-index:3;}
 .ourValueImg .tabBtn-container .tabBtn.active{background:linear-gradient(94.01deg,#028485 1.24%,#07ABEC 71.32%);box-shadow:0px 4px 40px 5px #028485;border-radius:1000px;}
 .bgVideo{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;}
 .bannerCont{position:relative;z-index:2;}
@@ -160,8 +167,14 @@ button.slick-next.slick-arrow{background-image: url(../images/nextBtn.png);trans
 .offeringSecScroller{overflow-x: hidden;border-radius: 36px;box-shadow: 0px 0px 75px 30px rgba(9, 39, 147, 0.65);}
 .offeringSecScrollerSub{display: flex;align-items: center;}
 .offeringSec{width:100%;min-width:100vw;display:flex;align-items:center;justify-content:center;}
-.BannerSec::before{content: " ";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: #00000030;}
+.BannerSec::before{content: " ";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: #00000030;z-index: 2;}
 
 
+.commBtn > *{transition:all 0.3s ease;}
+.commBtn > *:hover{transform:scale(1.05);box-shadow:0 8px 20px rgba(7,171,236,0.4);}
+
+section{overflow: hidden;}
+html,body{overflow-x:hidden;}
 
 
+  
