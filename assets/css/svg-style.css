@@ -149,14 +149,43 @@ button.slick-next.slick-arrow{background-image: url(../images/nextBtn.png);trans
 
 /* About Page */
 .ourValueImg .tabBtn-container{position:relative;width:100%;height:100%;aspect-ratio:0.98/1;margin:auto;}
-.ourValueImg .tabBtn{position:absolute;background:radial-gradient(circle at center,#00b4ff,#0074c1);color:white;font-weight:bold;text-align:center;border-radius:50%;cursor:pointer;padding:1rem;display:flex;align-items:center;justify-content:center;transition:all 0.4s ease-in-out;font-size:0.7rem;width:125px;height:125px;flex-shrink:0;background:linear-gradient(94.01deg,rgba(2,132,133,0.47) 1.24%,rgba(7,171,236,0.47) 71.32%);box-shadow:0px 4px 44.4px 1px rgba(255,255,255,0.25);border-radius:1000px;}
+.ourValueImg .tabBtn{position:absolute;background:radial-gradient(circle at center,#00b4ff,#0074c1);color:white;font-weight:bold;text-align:center;border-radius:50%;cursor:pointer;padding:1rem;display:flex;align-items:center;justify-content:center;transition:all 0.4s ease-in-out;transition-duration:0.4s !important;transition-property:inherit !important;font-size:0.7rem;width:125px;height:125px;flex-shrink:0;background:linear-gradient(94.01deg,rgba(2,132,133,0.47) 1.24%,rgba(7,171,236,0.47) 71.32%);box-shadow:0px 4px 44.4px 1px rgba(255,255,255,0.25);border-radius:1000px;}
 
 /* Specific positions */
-.ourValueImg .tabBtn-container .tabBtn:first-child{top:0%;right:0%;z-index:2;}
-.ourValueImg .tabBtn-container .tabBtn:nth-child(2){top:0%;left:30%;}
-.ourValueImg .tabBtn-container .tabBtn:nth-child(3){top:25%;left:32%;}
-.ourValueImg .tabBtn-container .tabBtn:nth-child(4){top:44%;left:50%;}
-.ourValueImg .tabBtn-container .tabBtn:nth-child(5){top:45%;right:0%;}
+/* Default positions (pos-1) */
+.tabBtn-container.pos-1 .tabBtn:nth-child(1) { top:0%; right:0%; z-index:2; }
+.tabBtn-container.pos-1 .tabBtn:nth-child(2) { top:0%; left:30%; }
+.tabBtn-container.pos-1 .tabBtn:nth-child(3) { top:25%; left:32%; }
+.tabBtn-container.pos-1 .tabBtn:nth-child(4) { top:44%; left:50%; }
+.tabBtn-container.pos-1 .tabBtn:nth-child(5) { top:45%; right:0%; }
+
+/* When 2nd tab is active (pos-2) */
+.tabBtn-container.pos-2 .tabBtn:nth-child(1) { top:0%; right:0%; z-index:2; }
+.tabBtn-container.pos-2 .tabBtn:nth-child(2) { top:0%; left:30%; }
+.tabBtn-container.pos-2 .tabBtn:nth-child(3) { top:45%; left:32%; }
+.tabBtn-container.pos-2 .tabBtn:nth-child(4) { top:44%; left:60%; }
+.tabBtn-container.pos-2 .tabBtn:nth-child(5) { top:25%; right:0%; }
+
+/* When 3rd tab is active (pos-3) */
+.tabBtn-container.pos-3 .tabBtn:nth-child(1) { top:18%; right:3%; z-index:2; }
+.tabBtn-container.pos-3 .tabBtn:nth-child(2) { top:0%; left:30%; }
+.tabBtn-container.pos-3 .tabBtn:nth-child(3) { top:25%; left:32%; }
+.tabBtn-container.pos-3 .tabBtn:nth-child(4) { top:0%; left:57%; }
+.tabBtn-container.pos-3 .tabBtn:nth-child(5) { top:45%; right:0%; }
+
+/* When 4th tab is active (pos-4) */
+.tabBtn-container.pos-4 .tabBtn:nth-child(1) { top:2%; right:23%; z-index:2; }
+.tabBtn-container.pos-4 .tabBtn:nth-child(2) { top:0%; left:30%; }
+.tabBtn-container.pos-4 .tabBtn:nth-child(3) { top:21%; left:75%; }
+.tabBtn-container.pos-4 .tabBtn:nth-child(4) { top:25%; left:30%; }
+.tabBtn-container.pos-4 .tabBtn:nth-child(5) { top:45%; right:0%; }
+
+/* When 5th tab is active (pos-5) */
+.tabBtn-container.pos-5 .tabBtn:nth-child(1) { top:0%; right:0%; z-index:2; }
+.tabBtn-container.pos-5 .tabBtn:nth-child(2) { top:0%; left:52%; }
+.tabBtn-container.pos-5 .tabBtn:nth-child(3) { top:18%; left:32%; }
+.tabBtn-container.pos-5 .tabBtn:nth-child(4) { top:44%; left:32%; }
+.tabBtn-container.pos-5 .tabBtn:nth-child(5) { top:25%; right:0%; }
 .ourValueImg .tabBtn-container .tabBtn.active{width:250px;height:250px;font-size:1.3rem;z-index:3;}
 .ourValueImg .tabBtn-container .tabBtn.active{background:linear-gradient(94.01deg,#028485 1.24%,#07ABEC 71.32%);box-shadow:0px 4px 40px 5px #028485;border-radius:1000px;}
 .bgVideo{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;}
@@ -169,6 +198,7 @@ button.slick-next.slick-arrow{background-image: url(../images/nextBtn.png);trans
 .offeringSecScrollerSub{display: flex;align-items: center;}
 .offeringSec{width:100%;min-width:100vw;display:flex;align-items:center;justify-content:center;}
 .BannerSec::before{content: " ";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: #00000030;z-index: 2;}
+.BannerSec::after{content:" ";position:absolute;bottom:0;left:auto;width:100%;height:10%;background:linear-gradient(0deg,rgba(24,21,22,1) 20%,rgba(255,255,255,0) 100%);z-index:2;}
 
 
 .commBtn > *{transition:all 0.3s ease;}
@@ -177,5 +207,30 @@ button.slick-next.slick-arrow{background-image: url(../images/nextBtn.png);trans
 section{overflow: hidden;}
 html,body{overflow-x:hidden;}
 
+/* For 2nd Active */
+/* .ourValueImg .tabBtn-container .tabBtn:first-child{top:0%;right:0%;z-index:2;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(2){top:0%;left:30%;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(3){top:45%;left:32%;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(4){top:44%;left:60%;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(5){top:25%;right:0%;} */
 
-  
+/* For 3rd Active */
+/* .ourValueImg .tabBtn-container .tabBtn:first-child{top:18%;right:3%;z-index:2;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(2){top:0%;left:30%;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(3){top:25%;left:32%;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(4){top:0%;left:57%;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(5){top:45%;right:0%;} */
+
+/* For 4th Active */
+/* .ourValueImg .tabBtn-container .tabBtn:first-child{top:2%;right:23%;z-index:2;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(2){top:0%;left:30%;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(3){top:21%;left:75%;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(4){top:25%;left:30%;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(5){top:45%;right:0%;} */
+
+/* For 5th Active */
+/* .ourValueImg .tabBtn-container .tabBtn:first-child{top:0%;right:0%;z-index:2;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(2){top:0%;left:52%;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(3){top:18%;left:32%;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(4){top:44%;left:32%;}
+.ourValueImg .tabBtn-container .tabBtn:nth-child(5){top:25%;right:0%;} */

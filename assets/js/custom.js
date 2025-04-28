@@ -50,22 +50,46 @@ $(document).ready(function () {
   });
 
   // Tab Section
-  $(".tabBtn").click(function () {
-    var tab_id = $(this).data("id");
+// Function to handle tab activation
+function activateTab(tabBtn) {
+  var tab_id = tabBtn.data("id");
+  var tab_index = tabBtn.index();
+  
+  // Remove all positioning classes
+  $(".tabBtn-container").removeClass("pos-1 pos-2 pos-3 pos-4 pos-5");
+  
+  // Add class based on which tab is active
+  $(".tabBtn-container").addClass("pos-" + (tab_index + 1));
+  
+  // Remove active class from all
+  $(".tabBtn, .tab-content").removeClass("active");
+  
+  // Add active class to hovered/clicked tab and content
+  tabBtn.addClass("active");
+  $("#" + tab_id).addClass("active");
+}
 
-    // Remove active class from all
-    $(".tabBtn, .tab-content").removeClass("active");
+// Click event handler
+$(".tabBtn").click(function() {
+  activateTab($(this));
+});
 
-    // Add active class to clicked tab and content
-    $(this).addClass("active");
-    $("#" + tab_id).addClass("active");
-
-    // Move the clicked tabBtn to be the first child
-    $(this).prependTo(".tabBtn-container");
-
-    // Optional: if using Slick inside tab content
-    $("#" + tab_id).find(".webStoriesSlider").slick("setPosition");
-  });
+// Hover event handler (with delay to prevent flickering)
+var hoverTimeout;
+$(".tabBtn").hover(
+  function() { // mouseenter
+    var $this = $(this);
+    hoverTimeout = setTimeout(function() {
+      activateTab($this);
+    }, 200); // 200ms delay before activating
+  },
+  function() { // mouseleave
+    clearTimeout(hoverTimeout);
+    // Optional: You can choose to keep the last clicked tab active
+    // or revert to default when mouse leaves
+    // If you want to keep the last clicked tab active, do nothing here
+  }
+);
 
 
   // Lazy Loading — apply only if not already set

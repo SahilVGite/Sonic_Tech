@@ -10,7 +10,8 @@
     .wtWeDoSecCardIcon,.wtWeDoSecCardIcon img{max-width:30px;}
     .TmPartnersSecCard > img{max-width:150px;}
     .techEhcSecImg > img{max-width:150px;}
-
+    .ourValueImg .tabBtn-container .tabBtn.active{width:220px;height:220px;}
+    .ourValueImg .tabBtn{width: 100px;height: 100px;}
 }
 @media only screen and (max-width: 1500px){
     .ourValueImg{max-width:50%;}
@@ -118,10 +119,40 @@
     .ourValueImg .tabBtn-container .tabBtn{width:20vw;height:20vw;font-size: 2vw;}
     .ourValueImg .tabBtn-container .tabBtn.active{width:38vw;height:38vw;}
     .ourValueImg .tabBtn-container{aspect-ratio:1.5 / 1.3;}
-    .ourValueImg .tabBtn-container .tabBtn:nth-child(2){top:0%;left:30%;}
-    .ourValueImg .tabBtn-container .tabBtn:nth-child(3){top:30%;left:30%;}
-    .ourValueImg .tabBtn-container .tabBtn:nth-child(4){top:50%;left:50%;}
-    .ourValueImg .tabBtn-container .tabBtn:nth-child(5){top:55%;right:0%;}
+    /* Default positions (pos-1) */
+    .tabBtn-container.pos-1 .tabBtn:nth-child(1) { top:0%; right:0%; z-index:2; }
+    .tabBtn-container.pos-1 .tabBtn:nth-child(2) { top:0%; left:30%; }
+    .tabBtn-container.pos-1 .tabBtn:nth-child(3) { top:28%; left:32%; }
+    .tabBtn-container.pos-1 .tabBtn:nth-child(4) { top:48%; left:50%; }
+    .tabBtn-container.pos-1 .tabBtn:nth-child(5) { top:50%; right:0%; }
+
+    /* When 2nd tab is active (pos-2) */
+    .tabBtn-container.pos-2 .tabBtn:nth-child(1) { top:0%; right:30%; z-index:2; }
+    .tabBtn-container.pos-2 .tabBtn:nth-child(2) { top:0%; left:0%; }
+    .tabBtn-container.pos-2 .tabBtn:nth-child(3) { top:55%; left:0%; }
+    .tabBtn-container.pos-2 .tabBtn:nth-child(4) { top:50%; left:28%; }
+    .tabBtn-container.pos-2 .tabBtn:nth-child(5) { top:30%; right:30%; }
+
+    /* When 3rd tab is active (pos-3) */
+    .tabBtn-container.pos-3 .tabBtn:nth-child(1) { top:33%; right:30%; z-index:2; }
+    .tabBtn-container.pos-3 .tabBtn:nth-child(2) { top:0%; left:0%; }
+    .tabBtn-container.pos-3 .tabBtn:nth-child(3) { top:30%; left:0%; }
+    .tabBtn-container.pos-3 .tabBtn:nth-child(4) { top:4%; left:30%; }
+    .tabBtn-container.pos-3 .tabBtn:nth-child(5) { top:65%; right:35%; }
+
+    /* When 4th tab is active (pos-4) */
+    .tabBtn-container.pos-4 .tabBtn:nth-child(1) { top:33%; right:30%; z-index:2; }
+    .tabBtn-container.pos-4 .tabBtn:nth-child(2) { top:0%; left:0%; }
+    .tabBtn-container.pos-4 .tabBtn:nth-child(3) { top:4%; left:30%; }
+    .tabBtn-container.pos-4 .tabBtn:nth-child(4) { top:30%; left:0%; }
+    .tabBtn-container.pos-4 .tabBtn:nth-child(5) { top:65%; right:35%; }
+
+    /* When 5th tab is active (pos-5) */
+    .tabBtn-container.pos-5 .tabBtn:nth-child(1) { top:0%; right:0%; z-index:2; }
+    .tabBtn-container.pos-5 .tabBtn:nth-child(2) { top:3%; left:50%; }
+    .tabBtn-container.pos-5 .tabBtn:nth-child(3) { top:27%; left:32%; }
+    .tabBtn-container.pos-5 .tabBtn:nth-child(4) { top:60%; left:32%; }
+    .tabBtn-container.pos-5 .tabBtn:nth-child(5) { top:30%; right:0%; }
     .stackcards{flex-direction: column;}
     .stackcards > *{max-width: 100%;}
     .vmImg{max-width: 50%;}
