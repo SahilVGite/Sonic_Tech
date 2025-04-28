@@ -52,21 +52,21 @@ $(document).ready(function () {
   // Tab Section
   $(".tabBtn").click(function () {
     var tab_id = $(this).data("id");
-  
+
     // Remove active class from all
     $(".tabBtn, .tab-content").removeClass("active");
-  
+
     // Add active class to clicked tab and content
     $(this).addClass("active");
     $("#" + tab_id).addClass("active");
-  
+
     // Move the clicked tabBtn to be the first child
     $(this).prependTo(".tabBtn-container");
-  
+
     // Optional: if using Slick inside tab content
     $("#" + tab_id).find(".webStoriesSlider").slick("setPosition");
   });
-  
+
 
   // Lazy Loading — apply only if not already set
   $("img:not([loading]), iframe:not([loading])").attr("loading", "lazy");
@@ -260,12 +260,12 @@ window.addEventListener('load', function () {
         duration: 1,
       })
       .from("#mission", {
-        y: 200,
+        x: -200,
         opacity: 0,
         duration: 1,
       }, "+=0.5")
       .from("#vision", {
-        y: 200,
+        x: 200,
         opacity: 0,
         duration: 1,
       }, "+=0.5");
@@ -330,5 +330,71 @@ window.addEventListener('load', function () {
   } else {
     console.warn('Element .card-stack-section or .stackcards not found.');
   }
+
+  // This code for solution page GSAP animation when user scroll cards will take place of before card
+
+  // const cardStackSection = document.querySelector('.card-stack-section');
+  // const cards = gsap.utils.toArray(".stackcards");
+
+  // if (cardStackSection && cards.length > 0) {
+  //   ScrollTrigger.matchMedia({
+
+  //     "(min-width: 611px)": function () {
+  //       const cardsTl = gsap.timeline({
+  //         scrollTrigger: {
+  //           trigger: ".card-stack-section",
+  //           start: "center center",
+  //           end: "+=" + ((cards.length + 1) * window.innerHeight),
+  //           scrub: true,
+  //           pin: true,
+  //           onUpdate: (self) => {
+  //             let progress = self.progress * (cards.length - 1);
+  //             let activeIndex = Math.floor(progress);
+
+  //             cards.forEach((card, i) => {
+  //               const shiftIndex = i - activeIndex;
+
+  //               if (shiftIndex >= 0) {
+  //                 gsap.to(card, {
+  //                   yPercent: -10 * shiftIndex,
+  //                   scale: 1 - (0.05 * shiftIndex), // 👈 Scaling correctly while scrolling
+  //                   duration: 0.2,
+  //                   overwrite: true
+  //                 });
+  //               } else {
+  //                 gsap.to(card, {
+  //                   yPercent: -200,
+  //                   scale: 1 - (0.05 * (cards.length - 1)), // 👈 keep last card's minimum scale
+  //                   duration: 0.2,
+  //                   overwrite: true
+  //                 });
+  //               }
+  //             });
+  //           }
+  //         }
+  //       });
+
+  //       // Initial Setup
+  //       cards.forEach((card, i) => {
+  //         gsap.set(card, {
+  //           yPercent: -10 * i,
+  //           scale: 1 - (0.05 * i),
+  //           zIndex: cards.length - i
+  //         });
+  //       });
+
+  //       cardStackSection.style.willChange = 'transform';
+  //     },
+
+  //     "(max-width: 610px)": function () {
+  //       console.log('Card stack animation disabled on small screens.');
+  //     }
+
+  //   });
+
+  // } else {
+  //   console.warn('Element .card-stack-section or .stackcards not found.');
+  // }
+
 
 });

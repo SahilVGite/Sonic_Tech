@@ -20,6 +20,7 @@ body.menu-open{overflow: hidden;}
 .hmBanner .bannerCont{max-width: 70%;}
 .bannerCont > .commBtn{margin-top: 3em;}
 
+.BannerSec{padding-top:calc(var(--secGap) * 2);}
 
 .wtWeDoSec{background-image: url(../images/wtWeDo-Bg.png);background-position: center;background-size: 100% 100%;background-repeat: no-repeat;}
 .wtWeDoSec::before{content: " ";background: linear-gradient(0deg, #181516 0%, #060B13 117.57%);filter: blur(53.4px);position: absolute;top: 0;left: 0;width: 100%;height: 20%;z-index: -1;}
